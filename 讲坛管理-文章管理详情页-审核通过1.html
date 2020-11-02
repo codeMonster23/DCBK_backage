@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link href="css/backstage.css" rel="stylesheet">  
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+        <div class="container-fluid padding0">
+            <div class="navbar-left">
+                <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+            </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+                <ul class="login-dropdown">
+                    <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+                    <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+                    <li><a href=""><i class="exit"></i>退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--头部部分结束-->
+<!--主体部分开始-->
+<div class="container-fluid">
+    <div class="row main">
+       <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4 active">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li class="active"><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item18 active">
+              <a href="javascript:void(0)"><i></i><span>讲坛管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first active"><a href="">文章管理</a></li>
+                <li><a href="">分组管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content audit1 forumManage">
+            <div class="audit-progress">
+                <div class="audit-progress-l">
+                   <p>当前状态：</p>
+                   <p>审核通过</p>
+                </div>
+                <div class="audit-progress-r">
+                    <ul class="clearfix">
+                       <li class="step1"></li>
+                       <li class="step2 active">初审</li>
+                       <li class="step2 active">政审</li>
+                       <li class="step2 active">质审</li>
+                       <li class="step2 active">终审</li>
+                    </ul>
+                    <div class="progress-info">
+                        <span><p>蒋萌(提交) </p><p>2016-01-25 13:54</p></span>
+                        <span><p>韩京锎(审核)</p><p>2016-01-25 13:54</p></span>
+                        <span><p>韩京锎(审核)</p><p>2016-01-25 13:54</p></span>
+                        <span><p>韩京锎(审核)</p><p>2016-01-25 13:54</p></span>
+                        <span><p>韩京锎(审核)</p><p>2016-01-25 13:54</p></span>
+                    </div>
+                    <div class="handle">
+                        <span>操作：</span>
+                        <a href="" class="btn"> 下架</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center audit1-h2">经济动态，瞬息万变——再不关注中国，你就out啦 </h2>
+            <div class="tab">
+                <div class="tab-header clearfix">
+                    <div class="tab-nav  pull-left padding0">
+                        <a href="javascript:;" class="active">作品基本信息</a>
+                        <a href="javascript:;">作品价格信息</a>
+                        <a href="javascript:;">作品审核信息</a>
+                        <a href="javascript:;" class="last">作品操作日志</a>
+                    </div>
+                    <div class="pull-right tab-header-btns">
+                        <a href="">预览作品>></a>
+                        <a href="" class="btn1">查看作品审核报告</a>
+                    </div>
+                </div>
+    
+                    <div class="tab-content works-info">
+                        <div class="audit-title">作品基本信息 </div>
+                        <table class="table table-responsive audit-table">
+                            <thead>
+                                <tr>
+                                    <th>项目</th>
+                                    <th>详细</th>
+                                    <th class="last">操作</th>
+                                </tr>
+                                    </thead>
+                                    <tbody>
+                                <tr>
+                                    <td>标题</td> 
+                                    <td class="title chapter text-left"><a href="">序言:再不关注中国，你就out啦</a><img src="images/yc-icon1.gif" class="yc-icon" style="margin-left:10px;"></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>关键词</td>
+                                    <td class="text-left">经济； 基金； 金融； 动态；</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>栏目</td>
+                                    <td class="text-left">人文社科</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr class="last">
+                                    <td>作品简介</td>
+                                    <td class="text-left" style="max-width:200px;"><p>2015，对中国来说是特殊的一年。在这一年里，中国发生了许多惊天动地的大事，如：中国一带一路引领欧亚
+                                    大陆；中国高铁面向国际；中国的阿里巴巴在美国上市，跨国电商风风火火；中国的自贸区惠及百姓，深化改革开
+                                    放；昔日的中国首富李嘉诚突然撤资中国，举国哗然；中国金融改革大迈进，人民币成世界货币······
+                                    中国这头雄狮正在苏醒，要让这世界刮目相看，让中国威胁论一击即破！</p></td>
+                                    <td>[<a href="">修改</a>]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--tab-content-->
+             <div class="tab-content price-info">
+                <div class="audit-title">作品价格信息</div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>详细</th>
+                            <th class="last">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>建议价格</td> 
+                            <td class="text-left">0.00</td>
+                            <td>--</td>
+                        </tr>
+                        <tr class="last">
+                            <td>实际价格</td> 
+                            <td class="text-left">0.00</td>
+                            <td>[<a href="">修改</a>]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-content audit-info">
+                <div class="audit-title">作品审核信息</div>
+                <table class="table table-responsive audit-table">
+                    <tbody>
+                        <tr>
+                            <td>初审</td> 
+                            <td class="text-left audit-advice"><p>通过！ </p><p>该作品撰写非常不错,结构清晰。</p><p class="p3">审核人：韩京锎   审核日期：2017-07-04 16:11:18 </p></td>
+                            <td class="text-left last"><p><b>管理员确认：</b></p><p>无需管理员确认</p></td>
+                        </tr>
+                        <tr>
+                            <td>政审</td> 
+                            <td class="text-left audit-advice"><p>通过！ </p><p class="p3">审核人：韩京锎   审核日期：2017-07-04 16:11:18 </p></td>
+                            <td class="text-left last"><p><b>管理员确认：</b></p><p>无需管理员确认</p></td>
+                        </tr>
+                        <tr>
+                            <td>质审</td> 
+                            <td class="text-left audit-advice"><p>通过！ </p><p class="p3">审核人：韩京锎   审核日期：2017-07-04 16:11:18 </p></td>
+                            <td class="text-left last"><p><b>管理员确认：</b></p><p>无需管理员确认</p></td>
+                        </tr>
+                        <tr class="last">
+                            <td>终审</td> 
+                             <td class="text-left audit-advice"><p>通过！ </p><p class="p3">审核人：韩京锎   审核日期：2017-07-04 16:11:18 </p></td>
+                            <td class="last">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!--tab-content-->
+            <div class="tab-content log">
+                <div class="audit-title">作品操作日志</div>
+                <div class="audit-radio mgt10">
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">全部</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">修改</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">审核意见</span></div>
+                </div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>类别</th>
+                            <th>详细</th>
+                            <th class="last">操作人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>修改</td>
+                            <td>审核意见</td>
+                            <td>【编客】张三</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>修改</td>
+                            <td>将“经济动态，瞬息万变”修改为“瞬息万变，经济动态”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>审核意见</td>
+                            <td>将文章“为什么是中国?——“一带一路”的经济逻辑”删除</td>
+                            <td>【编客】张三</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>审核意见</td>
+                            <td>修改简章</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>修改</td>
+                            <td>“第一章、透视中国“一带一路””修改意见“与主题不符合”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr class="last">
+                            <td>2015-11-21 10:19:16</td> 
+                            <td>审核意见</td>
+                            <td>将文章“为什么是中国?——“一带一路”的经济逻辑”上移</td>
+                            <td>【责编】李四</td>
+                        </tr>
+                    </tbody>
+                </table></div><!--tab-content-->
+            </div><!--tab-->
+        <div class="pop pop1">
+            <i class="arrow"></i>
+            <p>确认移交审读室政审吗？</p> 
+            <div><a href="javascript:void(0)" class="btn">确认</a><a href="javascript:void(0)" class="btn   btn-cancel">取消</a></div>
+        </div>
+        <div class="pop pop2">
+            <i class="arrow"></i>
+            <p>确认取消审读室政审吗？</p> 
+            <div><a href="javascript:void(0)" class="btn">确认</a><a href="javascript:void(0)" class="btn btn-cancel">取消</a></div>
+        </div>
+    </div><!--content部分结束-->
+    </div><!--main结束-->
+    <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">©《中国学术期刊（光盘版）》电子杂志社有限公司</div>
+    </div>
+</div><!--container-fluid结束-->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+
+    var con_height=$(".content").height();
+    $(".sidebar").height(con_height);
+    $(".sidebar .nav-item").click(function() { 
+        $(this).toggleClass('active').siblings().removeClass('active');
+    }); 
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+
+    $(window).scroll(function(){
+        var h1=$(window).scrollTop();
+        if(h1>206){
+            $(".tab-header").addClass('active');
+            var $nav_a = $(".tab-nav a");
+            var $content = $(".tab-content");
+
+            //监听导航条被点击
+            $nav_a.click(function(){
+                var i = $(this).index();
+                $("html,body").stop(true).animate({"scrollTop":$content.eq(i).offset().top - 40},1000);
+            });
+            //监听窗口的卷动
+            $(window).scroll(function(){
+                var A = $(window).scrollTop();  //已经卷动的高度
+                
+                if(A < $content.eq(1).offset().top - 40){
+                    $nav_a.eq(0).addClass("active").siblings().removeClass("active");
+                }else if(A < $content.eq(2).offset().top - 40){
+                    $nav_a.eq(1).addClass("active").siblings().removeClass("active");
+
+                }else if(A < $content.eq(3).offset().top - 40){
+                    $nav_a.eq(2).addClass("active").siblings().removeClass("active");
+
+                }else if(A < $content.eq(4).offset().top -40){
+                    $nav_a.eq(3).addClass("active").siblings().removeClass("active");
+                    if(A==$("body").height()-$(window).height()){
+                        $nav_a.eq(4).addClass("active").siblings().removeClass("active");
+                    }else{
+                        $nav_a.eq(3).addClass("active").siblings().removeClass("active");
+                    }
+                }
+            });
+        }else{
+            $(".tab-header").removeClass('active');
+        }
+    });
+    
+    $(".checkbox-box .checkbox,.checkbox-label").click(function(){
+      $(this).parent(".checkbox-box").toggleClass('active').siblings().removeClass('active');
+    });
+</script>
+</body>
+</html>

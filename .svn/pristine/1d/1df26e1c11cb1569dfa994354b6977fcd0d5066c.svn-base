@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+      <link href="css/seriesBooks.css" rel="stylesheet" type="text/css">
+    	<link href="css/backstage.css" rel="stylesheet"> 
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade modal13 modal15 qxkz" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+       		<!--弹框1 -->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<h4 class="modal-title title1">权限控制</h4>
+             	</div>
+             	<div class="modal-body">
+                    <div class="row-item spec"><label>管理员姓名：</label><span class="left">杨丹丹</span></div>
+                    <div class="row-item"><label>免费专辑：</label><input type="text" value=""></div>
+                    <div class="tip"><i>*</i><span class="red">请填写专辑代码，多个专辑请用英文分号隔开；<br>空为开通所有权限，null为不开通免费权限</span></div>
+                    <div class="row-item calendar-input"><label>免费开通时间：</label><input type="text" value="" class="laydate-icon" id="start"></div>
+                    <div class="row-item calendar-input"><label>免费结束时间：</label><input type="text" value="" class="laydate-icon" id="end"></div>
+                    <div class="btngroup"><a href="javascript:void(0)" class="left save">确定</a><a href="javascript:void(0)" class="right cancel">取消</a></div>
+              </div>
+             	<script>
+					$(".select").click(function(event){
+						var ul = $(".select ul");
+						if(ul.css("display")=="none"){
+							ul.slideDown(100);
+						}else{
+							ul.slideUp(100);
+						}
+						event.stopPropagation()
+					});
+					$(".select ul li ").click(function(event){
+						var txt = $(this).text();
+						$(".select p").html(txt);
+						$(".select ul").hide();
+						event.stopPropagation()
+					});
+					$(document).click(function(){
+						$(".select ul").hide();
+					});
+                </script>
+                
+          	</div><!-- /.modal-content 弹框6结束-->
+      	</div>
+    </div><!-- /.modal -->
+
+    <!--模态框结束-->
+    
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+      $('.modal13').modal('show');
+      //日历时间
+      !function(){
+        laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+        laydate({elem: '#demo'});//绑定元素
+        }();
+        //日期范围限制
+        var start = {
+            elem: '#start',
+            format: 'YYYY-MM-DD',
+            min: laydate.now(), //设定最小日期为当前日期
+            max: '2099-06-16', //最大日期
+            istime: true,
+            istoday: false,
+            choose: function(datas){
+                 end.min = datas; //开始日选好后，重置结束日的最小日期
+                 end.start = datas //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY-MM-DD',
+            min: laydate.now(),
+            max: '2099-06-16',
+            istime: true,
+            istoday: false,
+            choose: function(datas){
+                start.max = datas; //结束日选好后，充值开始日的最大日期
+            }
+        };
+        laydate(start);
+        laydate(end);
+    </script>
+    </body>
+</html>

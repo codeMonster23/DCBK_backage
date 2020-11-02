@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade modal6" tabindex="-1" data-backdrop="static" data-keyboard="false">
+       <div class="modal-dialog">
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title blue">
+                  	修改负责人
+                	</h4>
+             	</div>
+             	<div class="modal-body">
+                 <div class="works-title">
+                  <p><b>主编姓名：孙子福</b></p>
+                  <p><b>所属行业：机电维修</b></p>
+                </div>
+                <div class="tab">
+                  <div class="tab-nav">
+                    <ul class="clearfix">
+                      <li><b>查找质审编辑：</b></li>
+                      <li><a href="#">初审编辑</a></li>
+                      <li><a href="#">质审编辑</a></li>
+                      <li class="cur"><a href="#">终审编辑</a></li>
+                      <li><a href="#">管理员</a></li>
+                      <li><a href="#" >检索</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <!--初审编辑内容开始-->
+                    <div class="con">
+                      <div class="con-item">
+                        <ul class="con-list">
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--初审编辑内容结束-->
+                    <!--质审编辑内容开始-->
+                    <div class="con content2">
+                      <div class="con-item">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">一级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">二级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">三级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                        </div>
+                        <ul class="con-list">
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--质审编辑内容结束-->
+                    <!--终审编辑内容开始-->
+                    <div class="con">
+                      <div class="con-item">
+                        <ul class="con-list">
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--终审编辑内容结束-->
+                    <!--管理员开始-->
+                    <div class="con">
+                      <div class="con-item">
+                        <ul class="con-list">
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--管理员结束-->
+                    <!--检索开始-->
+                    <div class="con content5">
+                      <div class="con-item">
+                        <div class="row">
+                          <div class="col-sm-3 pdr0">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">编辑姓名<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="">真实姓名</a></li>
+                                <li><a href="">用户名</a></li>
+                                <li><a href="">工作单位</a></li>
+                                <li><a href="">认证行业</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                          <div class="col-sm-9 pdl0">
+                            <div class="input-group col-sm-10 pull-left">
+                              <input type="text" class="form-control search-input">
+                              <div class="input-group-btn"><button class="btn btn-search">搜索</button></div>
+                            </div><!--nput-group-->
+                          </div>
+                        </div><!--row-->
+                        <ul class="con-list">
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                           <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">章文岚</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">米雅钊</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">韩京锎</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">魏娜</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">蒋萌</span></li>
+                          <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">李国战</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--检索开始-->
+                  </div>
+                </div>
+              </div>
+                
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save"  data-dismiss="modal">确定</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+             	</div>
+          	</div><!--modal-content结束-->
+      	</div>
+    </div><!--modal -->
+    <!--模态框结束-->
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('.modal6').modal('show');
+    $(".tab-nav ul li").click(function(){
+      var index=$(this).index()-1;
+      $(this).addClass('cur').siblings().removeClass('cur');
+      $(this).parents(".tab-nav").siblings().find(".con").eq(index).show().siblings().hide();
+    });
+    $(".checkbox-box .checkbox,.checkbox-label").click(function(){
+      $(this).parent(".checkbox-box").toggleClass('active').siblings().removeClass('active');
+    });
+    </script>
+    </body>
+</html>

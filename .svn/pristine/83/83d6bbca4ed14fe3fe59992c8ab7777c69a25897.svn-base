@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>收益管理</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/backstage.css" rel="stylesheet">
+<link href="../css/bookother.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../js/jquery-1.10.1.min.js"></script>
+<script src="../../laydate/laydate.js"></script>
+<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+
+</head>
+<style>
+.works { height:200px; }
+.works-classify { padding-top:10px; padding-bottom:0; }
+.works .dropdown-toggle { width: 140px; }
+</style>
+<body>
+<!--头部部分开始-->
+<nav class="navbar clearfix">
+    <div class="container-fluid">
+        <div class="navbar-left"> <a href="" class="logo">大众知识服务</a><span class="padding-15">|</span><a href="">后台管理系统</a>
+            <div class="sublogo pull-left"><a href="">大成编客</a> <span>&nbsp;|&nbsp;</span> <a href=""><strong>品得书院</strong></a></div>
+        </div>
+        <div class="navbar-right"> <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+            <ul class="login-dropdown">
+                <li><a href=""><i class="qxgl"></i>权限控制</a></li>
+                <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+                <li><a href=""><i class="exit"></i>退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--头部部分结束--> 
+<!--主体部分开始-->
+<div class="container-fluid">
+    <div class="row main clearfix">
+        <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1"> <a href="javascript:void(0)"><i></i><span>图书管理</span><b></b></a>
+                <ul class="nav-list">
+                    <li class="first"><a href="">全部图书</a></li>
+                    <li><a href="">品评管理</a></li>
+                    <li class="last"></li>
+                </ul>
+            </div>
+            <div class="nav-item nav-item2"> <a href="javascript:void(0)"><i></i><span>出版社管理</span><b></b></a>
+                <ul class="nav-list">
+                    <li class="first"><a href="">出版社管理</a></li>
+                    <li><a href="">出版社管理</a></li>
+                    <li class="last"></li>
+                </ul>
+            </div>
+            <div class="nav-item nav-item3 active"> <a href="javascript:void(0)"><i></i><span>收益管理</span><b></b></a>
+                <ul class="nav-list">
+                    <li class="first active"><a href="">收益管理</a></li>
+                    <li><a href="">收益管理</a></li>
+                    <li class="last"></li>
+                </ul>
+            </div>
+        </div>
+        <!--sidebar部分结束-->
+        <div class="col-sm-10 content fcgl profit">
+            <div class="breadcrumb-nav"> <a href="">首页></a> <a href="">收益管理></a> <a href="">订单管理</a> </div>
+            <div class="works">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 padding0">
+                            <div class="row search-box">
+                                <div class="col-sm-2 padding0">
+                                    <div class="dropdown"> <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">订单编号<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">文集名</a></li>
+                                            <li><a href="">原作者</a></li>
+                                            <li><a href="">文章名</a></li>
+                                            <li><a href="">出版社名称</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--dropdown--> 
+                                </div>
+                                <!--col-sm-2-->
+                                <div class="col-sm-10 padding0 pdl20">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-search">搜索</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--col-sm-10--> 
+                            </div>
+                            <!--search-box--> 
+                        </div>
+                        <!--col-sm-10--> 
+                    </div>
+                </div>
+            </div>
+            <!--table-->
+            <div class="audit works-manage">
+                <div class="tab">
+                    <div class="tab-nav"> <a name="tab-nav" href="javascript:void(0)" class="active last" data-value="qb">全部</a>
+                        <input type="hidden" id="tab-nav-value" value="">
+                        <input type="hidden" id="ordertime" value="">
+                    </div>
+                    <script type="text/javascript">
+                    $("a[name='tab-nav']").click(function () {
+                        $("#tab-range-value").val("");
+                        $("a[name=tab-range]").removeClass("first cur");
+                        $("a[name='tab-nav']").removeClass("active");
+                        $(this).addClass("active");
+                        $("#tab-nav-value").val($(this).attr("data-value"));
+                        loaddata(20,1);
+                    })
+                </script>
+                    <div class="tab-content">
+                        <div class="audit-status">
+                            <div class="pull-left  btns btns-blue"> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="jr">今日</a> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="zr">昨天</a> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="bz">本周</a> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="sy">近三个月</a> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="bn">近一年</a>
+                                <input type="hidden" id="tab-range-value" value="">
+                            </div>
+                            <script type="text/javascript">
+                            $("a[name='tab-range']").click(function () {
+                                $("a[name=tab-range]").removeClass("first cur");
+                                $(this).addClass("first cur");
+                                var _=$(this).attr("data-value");
+                                $("#tab-range-value").val($(this).attr("data-value"));
+                                loaddata(20,1);
+                            })
+                        </script>
+                            <div class="pull-left calendar" style="margin-right:10px;">
+                                <ul>
+                                    <li>从</li>
+                                    <li class="inline laydate-icon" id="start" style="width:93px;">2018-11-13</li>
+                                    <li>至</li>
+                                    <li class="inline laydate-icon" id="end" style="width:93px;">2018-11-14</li>
+                                    <li><a href="javascript:void(0)" class=" skip">筛选</a></li>
+                                </ul>
+                                <script type="text/javascript">
+                                $(".skip").click(function () {
+                                    var date="";
+                                    $("a[name=tab-range]").removeClass("first cur");
+                                    if (($("#start").text())!=""&&($("#end").text())!="") {
+                                        var start=new Date($("#start").text().replace(/-/g,"/"));
+                                        var end=new Date($("#end").text().replace(/-/g,"/"));
+                                        if (start-end<=0) {
+                                            date=$("#start").text()+"$$$"+$("#end").text()
+                                        }else {
+                                            layer.open({
+                                                title: '提示',
+                                                content: '开始日期要在截止日期之前，请重新输入！'
+                                            });
+                                            return false;
+                                        }
+
+                                    }
+                                    $("#tab-range-value").val(date);
+                                    loaddata(20,1);
+                                })
+                            </script> 
+                            </div>
+                            <div class="btns btns-blue"> <a name="tab-range" href="javascript:void(0)" class="btn" data-value="" style="color:#191970">状态：</a> <a name="tab-range" href="javascript:void(0)" class="status btn cur" data-value="">全部</a> <a name="tab-range" href="javascript:void(0)" class="status btn" data-value="0">待确认</a> <a name="tab-range" href="javascript:void(0)" class="status btn" data-value="1" style="margin-right:10px;">已确认</a>
+                                <input type="hidden" id="order_status" value="">
+                                <script>
+                                $(".status").bind('click',function () {
+                                    $(".status").removeClass("first cur");
+                                    $(this).addClass("first cur");
+                                    var _=$(this).attr("data-value");
+                                    $("#order_status").val($(this).attr("data-value"));
+                                    loaddata(20,1);
+                                })
+                            </script> 
+                            </div>
+                            
+                            <div class="pull-right"> <span class="record">共<i id="totalCount">13872</i>条记录 | 总计收益 <i id="totalEarning">261348.15</i> 元</span> </div>
+                        </div>
+                        <!--audit-status-->
+                        <table class="table table-responsive audit-table ">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2"><input type="checkbox"></th>
+                                    <th rowspan="2">序号</th>
+                                    <th rowspan="2">订单编号</th>
+                                    <th rowspan="2">书名</th>
+                                    <th rowspan="2">出版社</th>
+                                    <th rowspan="2">订购者</th>
+                                    <th rowspan="2">订购时间</th>
+                                    <th rowspan="2">支付方式</th>
+                                    <th colspan="2" class="border-b4">现金收益（税前）</th>
+                                    <th colspan="2" class="border-b4">券收益 </th>
+                                    <th rowspan="2" class="last">操作</th>
+                                </tr>
+                                <tr class="tr2"> 
+                                    <th>出版社</th>
+                                    <th class="border-b4">知网</th>
+                                    <th>出版社</th>
+                                    <th class="border-b4">知网</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>01</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">[<a style="color:#0092e5" href="/cmps/statistics/orderdetail?cid=77&amp;fn=20171010_14515_10593460&amp;sn=CT5605398016694144687" target="_blank">待确认</a>]
+                                    <div class="pop pop2" style="display: block;"><i class="arrow"></i><i class="close-icon" onclick="popclose()">×</i><p>将订单状态标注为：</p><div><a href="javascript:void(0)" class="btn btn-green" id="zzcg" onclick="affirmclick({&quot;isAffirm&quot;:0,&quot;orderSn&quot;:&quot;CT5576597447057796614&quot;,&quot;collectionCode&quot;:&quot;20170718_13303_1606966278&quot;})">确认订单</a><a href="javascript:void(0)" class="btn btn-grey pull-right" id="zzsb" onclick="popclose()">取消确认</a></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>02</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>03</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>04</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>05</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>06</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>07</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>08</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>09</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="OrderSn" value="CT5605398016694144687|20171010_14515_10593460|1"></td>
+                                    <td>10</td>
+                                    <td>CT5605398016694144687</td>
+                                    <td><a href="" target="_blank" data-code="20171010_14515_10593460">生活中的趣味化学</a></td> 
+                                    <td>宁夏出版社</td>
+                                    <td><a href="" target="_blank">summer10123</a></td>
+                                    <td>2018/11/14 06:15:18</td>
+                                    <td>支付宝</td>
+                                    <td>10.00</td>
+                                    <td>2.00</td>
+                                    <td>1.00</td>
+                                    <td>1.00</td>
+                                    <td class="operate">已确认</td>
+                                </tr>
+                                <tr class="last batchProcess"><td colspan="18"><div class="page-left"><div class="checkbox-box1"><a href="javascript:void(0)" class="btn btn-grey" onclick="batchaffirmclick()">批量确认</a></div></div></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--table-->
+            <div class="page">
+                <ul>
+                    <li class="width-58"><a href="">首页</a></li>
+                    <li class="width-58"><a href="">上一页</a></li>
+                    <li><a href="" class="cur">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                    <li>...</li>
+                    <li><a href="">987</a></li>
+                    <li class="width-58"><a href="">下一页</a></li>
+                    <li class="width-58"><a href="">末页</a></li>
+                    <li class="width-58 border0 ">跳转到：</li>
+                    <li class="border0 width-80">
+                        <div class="input-group page-input">
+                            <input type="text" class="form-control txt">
+                            <div class="input-group-btn">
+                                <button class="btn btn-search btn-identify">确定</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--content部分结束-->
+    <div class="row footer">
+        <div class="col-md-10 col-md-offset-2 text-center"> 《中国学术期刊（光盘版）》电子杂志社有限公司 </div>
+    </div>
+</div>
+<script src="../../js/bootstrap.min.js"></script> 
+<script src="../js/public.js"></script>
+<script>
+ !function(){
+      //laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+      laydate({elem: '#demo'});//绑定元素
+      }();
+      //日期范围限制
+      var start = {
+          elem: '#start',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(), //设定最小日期为当前日期
+          max: '2099-06-16', //最大日期
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+               end.min = datas; //开始日选好后，重置结束日的最小日期
+               end.start = datas //将结束日的初始值设定为开始日
+          }
+      };
+      var end = {
+          elem: '#end',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(),
+          max: '2099-06-16',
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+              start.max = datas; //结束日选好后，充值开始日的最大日期
+          }
+      };
+      laydate(start);
+      laydate(end);
+</script>
+</body>
+</html>

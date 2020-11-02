@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    	<!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal2">模态框2</button>-->
+    
+    <!-- 模态框（Modal）2 -->
+    <div class="modal fade modal2" id="myModal" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+          	<!--弹框2-->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">审核意见</h4>
+             	</div>
+             	<div class="modal-body" >
+             		<p>该作品有文章需政审，确认通过初审，作品将进入政审。</p>  
+             		<h5>·请填写初审综合意见</h5>
+             		<div class="por modal-input">
+             			<textarea cols="20" rows="10"></textarea>
+						<a href="" class="delete-icon">清空意见</a>
+             		</div>
+             	</div>
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save" data-dismiss="modal">保存</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+             	</div>
+          	</div><!-- /.modal-content 弹框2结束-->
+      	</div><!-- /.modal -->
+    </div>
+    <!--模态框结束-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.modal2').modal('show');
+    </script>
+    </body>
+</html>

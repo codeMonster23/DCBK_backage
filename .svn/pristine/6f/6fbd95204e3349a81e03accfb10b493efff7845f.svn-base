@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    	<!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal3">模态框3</button>-->
+    <!-- 模态框（Modal）3 -->
+    <div class="modal fade modal12" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+          	<!--弹框3-->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">主编认证审核
+                  <small class="red">（不通过审核，系统将会自动发送短信通知用户。）</small></h4>
+             	</div>
+             	<div class="modal-body" >
+                <h5>请您填写不通过原因<small class="red">（必填）</small></h5>
+                <textarea class="modal-input"></textarea>
+             	</div>
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save" data-dismiss="modal">保存</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+             	</div>
+          	</div><!-- /.modal-content 弹框3结束-->
+      	</div><!-- /.modal -->
+    </div>
+    <!--模态框结束-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.modal12').modal('show');
+    </script>
+    </body>
+</html>

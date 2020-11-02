@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>出版社</title>
+    	<link href="../../css/bootstrap.min.css" rel="stylesheet"> 
+         <link href="../../css/seriesBooks.css" rel="stylesheet"> 
+    	<link href="../../css/backstage.css" rel="stylesheet"> 
+        <link href="../css/bookother.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="../../js/jquery-1.10.1.min.js"></script>
+    	<script type="text/javascript" src="../../laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="row main clearfix">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1">
+            <a href="javascript:void(0)"><i></i><span>图书管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部图书</a></li>
+              <li><a href="">品评管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2 active">
+            <a href="javascript:void(0)"><i></i><span>出版社管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部出版社</a></li>
+              <li><a href="">出版社管理</a></li>
+              <li class="active"><a href="">新增出版社</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item3">
+            <a href="javascript:void(0)"><i></i><span>收益管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">收益管理</a></li>
+              <li><a href="">收益管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+        </div><!--sidebar部分结束-->
+		<div class="col-sm-10 content jgForm">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页 > </a><a href="">出版社管理 > </a>新增出版社
+            </div>
+             <div class="audit">
+              <div class="tab-content modal13 modal15">
+                <div class="audit-title">出版社基本信息</div>
+                <div class="modal-body">
+                  <div class="row-item spec"><label>出版社编号:</label><input type="text" value="147239244" disabled></div>
+                  <div class="row-item"><label>出版社名称:</label><input type="text"><!-- <span class="hint warning">用户名已被占用！</span> --></div>
+                  <div class="row-item upload-avatar"><label>LOGO:</label>
+                    <dl class="left clearfix">
+                      <dt>
+                          <img src="../../images/upload-avatar.jpg" height="91" width="104" alt="">
+                      </dt>
+                      <dd>
+                          <p>（支持jpg、jpeg、gif、png、bmp格式的图片，大小不超过1M）</p>
+                          <a href="" class="btn">上传头像</a>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div id="mask" class="mask"></div>
+                  <div class="row-item">
+                    <label>所在省市:</label>
+                    <select id="sheng">
+                      <option value="0">请选择省份</option>
+                    </select>
+                    <select id='shi'>
+                      <option value="0">请选择市</option>
+                    </select>
+                  </div>
+                  <div class="row-item long"><label>详细地址:</label><input type="text"><span class="hint warning">请不要超过70个字！</span></div>
+                  <div class="row-item textarea"><label>简介:</label><textarea class="left"></textarea></div>
+                  <div class="row-item long"><label>机构官网:</label><input type="text"></div>
+                </div>
+              </div>
+              <div class="tab-content modal13 modal15">
+                <div class="audit-title">联系人信息</div>
+                <div class="modal-body">
+                  <div class="row-item spec"><label>姓名:</label></label><input type="text"></div>
+                  <div class="row-item"><label>工作部门:</label><input type="text"></div>
+                  <div class="row-item"><label>联系电话:</label><input type="text"></div>
+                  <div class="row-item"><label>电子邮箱:</label><input type="text"></div>
+                </div>
+              </div>
+              
+            </div>
+ 	         <div class="xjsq-btn">
+              <a href="" class="btn1">保&nbsp;存</a>
+            </div>
+            <!--audit部分结束-->
+            
+          </div>
+        </div>
+      </div><!--main部分结束-->
+      <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+        </div>
+      </div><!--footer部分结束-->
+    </div><!--container-fluid部分结束-->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".sidebar .nav-item").click(function(){
+      $(this).toggleClass('active').siblings().removeClass('active');
+    });
+    $(".table2 tr:odd").css("background-color","#f5f5f5");
+    $("table tr").each(function(){
+      $(this).find("td:eq(2)").css("color","#0c96e5");
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+        <link href="css/seriesBooks.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade modal13" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+       		<!--弹框1 -->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">×</button>
+                	<h4 class="modal-title title1">基本信息</h4>
+             	</div>
+             	<div class="modal-body">
+                  	<div class="row-item"><label class="left" for="input1">丛书编号：</label><input type="text" value="" id="input1" class="left"></div>
+                    <div class="row-item"><label class="left" for="input2">标题：</label><input type="text" value="" id="input2" class="left"></div>
+                    <div class="row-item"><label class="left">丛书分类：</label><div class="select left"><p>节日类</p><span class="caretM"></span>
+                    <ul>
+                    	<li>节日类</li>
+                        <li>放假类</li>
+                        <li>休息类</li>
+                        <li>发工资类</li>
+                    </ul>
+                    </div>
+                  </div>
+                  	<div class="row-item spec"><label class="left" for="input3">简介：</label><textarea class="left"></textarea></div>
+                    <div class="btngroup"><a href="javascript:void(0)" class="left save">保存</a><a href="javascript:void(0)" class="right cancel">取消</a></div>
+              </div>
+             	<script>
+					$(".select").click(function(event){
+						var ul = $(".select ul");
+						if(ul.css("display")=="none"){
+							ul.slideDown(100);
+						}else{
+							ul.slideUp(100);
+						}
+						event.stopPropagation()
+					});
+					$(".select ul li ").click(function(event){
+						var txt = $(this).text();
+						$(".select p").html(txt);
+						$(".select ul").hide();
+						event.stopPropagation()
+					});
+					$(document).click(function(){
+						$(".select ul").hide();
+					});
+                </script>
+                
+          	</div><!-- /.modal-content 弹框6结束-->
+      	</div>
+    </div><!-- /.modal -->
+
+    <!--模态框结束-->
+    
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+      $('.modal13').modal('show');
+    </script>
+    </body>
+</html>

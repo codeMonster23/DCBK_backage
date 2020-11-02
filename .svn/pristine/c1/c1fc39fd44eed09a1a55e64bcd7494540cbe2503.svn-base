@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <title>首页-登录后</title>
+    <link href="css/bootstrap.min.css"rel="stylesheet">  
+    <link href="css/backstage.css"rel="stylesheet">  
+    <script type="text/javascript"src="js/jquery-1.10.1.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+        <div class="container-fluid padding0">
+            <div class="navbar-left">
+                <a href=""class="logo pull-left"title="大成编客"></a><a href=""class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+            </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+                <ul class="login-dropdown">
+                    <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+                    <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+                    <li><a href=""><i class="exit"></i>退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--头部部分结束-->
+<!--主体部分开始-->
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-xs-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-xs-10 content login-nav">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <div class="row margin-top-225">
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module1.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p>作品总数 </p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module2.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p >待审核作品</p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module3.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p >已发布作品 </p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module4.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p >用户总数  </p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module5.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p >主编总数  </p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href=""><img src="images/module6.jpg" alt="" class="media-object"></a>
+                                </div>
+                                <div class="media-body">
+                                    <p >订单总数  </p>
+                                    <p>12346</p>
+                                </div>
+                            </div><!--media-->
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div><!--content部分结束-->
+    </div><!--main结束-->
+    <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">©《中国学术期刊（光盘版）》电子杂志社有限公司</div>
+    </div>
+</div><!--container-fluid结束-->
+<script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    $(".sidebar .nav-item").click(function() { 
+        $(this).toggleClass('active').siblings().removeClass('active');
+    }); 
+</script>
+</body>
+</html>

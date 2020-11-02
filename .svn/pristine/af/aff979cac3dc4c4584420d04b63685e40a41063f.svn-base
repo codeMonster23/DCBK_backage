@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+        <link href="css/seriesBooks.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade modal15" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+       		<!--弹框15 -->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">×</button>
+                	<h4 class="modal-title title1">选择模板</h4>
+             	</div>
+             	<div class="modal-body">
+                	<div class="template-block clearfix">
+                    	<dl class="current">
+                        	<dt><img src="images/choose-template1.jpg" width="175" height="233"></dt>
+                            <dd><span class="checkbox-box"></span><span class="checkbox-label">名字一</span></dd>
+                        </dl>
+                        <dl>
+                        	<dt><img src="images/choose-template2.jpg" width="175" height="233"></dt>
+                            <dd><span class="checkbox-box"></span><span class="checkbox-label">名字二</span></dd>
+                        </dl>
+                        <dl>
+                        	<dt><img src="images/choose-template3.jpg" width="175" height="233"></dt>
+                            <dd><span class="checkbox-box"></span><span class="checkbox-label">名字三</span></dd>
+                        </dl>
+                    </div>
+                  	<script>
+						$(".template-block dl").click(function(){
+							$(this).addClass("current").siblings("dl").removeClass("current")
+							})
+                    </script>
+                     <div class="btngroup"><a href="javascript:void(0)" class="left next">下一步</a><a href="javascript:void(0)" class="right  gb">关闭</a></div>
+          	</div><!-- /.modal-content 弹框15结束-->
+      	</div>
+        </div>
+    </div><!-- /.modal -->
+
+    <!--模态框结束-->
+    
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript">
+      $('.modal15').modal('show');
+    </script>
+    </body>
+</html>

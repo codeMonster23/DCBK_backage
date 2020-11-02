@@ -1,0 +1,398 @@
+@charset "utf-8";
+.forum .works{
+	height: 141px;
+}
+.forum .works .checkbox-box .checkbox{
+	margin-top: 9px;
+}
+.forum .calendar{
+	width: auto;
+	height: 30px;
+	border: none;
+	background: none;
+}
+.forum .calendar ul li{
+	height: 28px;
+	line-height: 28px;
+	margin-left: 10px;
+	margin-top: 1px;
+}
+.forum .calendar ul li.laydate-icon{
+	background-color: #fff;
+}
+.forum .calendar a.skip{
+	width: 52px;
+	height: 28px;
+	line-height: 28px;
+	background: #0092e5;
+	color: #fff;
+}
+.forum .audit-table .btn{
+	cursor:default;
+}
+.forum .audit-table .dropdown{
+	width: 63px;
+	height: 23px;
+	margin: 0 auto;
+}
+.forum .audit-table .dropdown .btn{
+	width: 70px;
+	color:#fff;
+}
+.forum .audit-table  .dropdown-menu{
+	width: 70px;
+}
+.forum .audit-table .dropdown .btn .caret{
+	right: 0;
+	color: #fff;
+}
+.forum .audit-table .checkbox {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #b6b6b6;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+.forum .audit-table .btn-lightGrey{
+	background-color: #b7b7b7;
+}
+.forum .audit-table a.title{
+	color:#333;
+}
+.forum .audit-table a.title:hover{
+	color:#3369ff;
+}
+.articleManage .audit-status .btn{
+	background: none;
+	border: none;
+	color: #333;
+}
+.articleManage .audit-status .btn.cur{
+	font-weight: bold;
+	color: #3369ff;
+}
+.articleManage .audit-status .record strong{
+	color: #000;
+}
+.forum .input-group .form-control{
+	font-size: 12px;
+}
+.groupManage .audit-table input.c{
+	vertical-align: middle;
+	margin: -2px 5px 0 0;
+}
+.groupManage .audit-table .name{
+	cursor: pointer;
+	color: #3369ff;
+}
+.groupManage .audit-table input.txt{
+	height: 28px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	display: none;
+}
+.forumManage .audit-status{
+	height: 45px;
+	line-height: 45px;
+	padding-top: 0;
+	padding-left: 25px;
+	background-color: #fafafa;
+	font-size: 14px;
+}
+.forumManage .audit-status span{
+	color: #0092e5;
+}
+.forumManage .audit-status .btns1{
+	height: 30px;
+}
+.forumManage .audit-status .btns1{
+	margin-left: 27%;
+}
+.forumManage .audit-status .btns a{
+	float: none;
+	width: 120px;
+	height: 30px;
+	border: none;
+	margin: 0 24px;
+	background-color: #7fa900;
+	-webkit-box-shadow: 2px  2px 2px rgba(127, 169, 0, .75);
+	box-shadow: 2px  2px 2px rgba(127, 169, 0, .75);
+	font-size: 14px;
+	color: #fff;
+}
+.forumManage .audit-status a.nopass{
+	background-color: #fff;
+	color: #7fa900;
+}
+.forumManage .worksDetail{
+	position: relative;
+	padding: 75px;
+	padding-bottom: 50px;
+	background-color: #faf3e3;
+}
+.forumManage .worksDetail .btn{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	border-radius: 0;
+	background-color: #edc4b0;
+	font-weight: bold;
+	color: #dd4d06;
+	-webkit-box-shadow: 2px  2px 2px rgba(221, 77, 6, .75);
+	box-shadow: 2px  2px 2px rgba(221, 77, 6, .75);
+}
+.forumManage .worksDetail .article{
+	padding: 40px;
+	background-color: #fff;
+}
+.forumManage .worksDetail .article h1{
+	text-align: center;
+	font-size: 30px;
+	font-family: "Microsoft Yahei";
+}
+.forumManage .worksDetail .article .info{
+	line-height: 24px;
+	text-align: center;
+	margin: 17px auto 65px;
+	font-size: 14px;
+}
+.forumManage .worksDetail .article .info .date{
+	margin-left: 32px;
+	font-size: 12px;
+	color: #b2b2b2;
+}
+.forumManage .worksDetail .article .content p{
+	margin: 15px 0;
+	text-indent: 2em;
+	line-height: 30px;
+	font-size: 16px;
+}
+.forumManage .worksDetail .article .content .keywords{
+	font-size: 12px;
+	color: #a6a6a6;
+}
+.forumManage .log{
+	padding: 0 70px 23px;
+	border: 1px solid #ccc;
+	background-color: #fafafa;
+}
+.forumManage .log .audit-title{
+	color: #3369ff;
+}
+.forumManage .log  .audit-table tr{
+	background-color: #fff;
+}
+.forumManage .log  .audit-table  th{
+	border-top:0 none !important;
+}
+.modifyAdvice .modal-content{
+	padding: 0;
+	background-color: #e5f3fc;
+}
+.modifyAdvice .modal-header{
+	position: relative;
+	padding-left: 30px;
+	border-bottom: none;
+	background: #0092e5;
+}
+.modifyAdvice .modal-header h4{
+	padding-left: 25px;
+	color: #fff;
+	background: url(../images/forum-icon1.png) left center no-repeat;
+}
+.modifyAdvice .modal-header h4 small{
+	color: #fff;
+}
+.modifyAdvice .modal-header .close{
+	position: absolute;
+	top:6px;
+	right: 13px;
+	width: 32px;
+	height: 32px;
+	margin-top: 0;
+	background:url(../images/forum-icon2.png) no-repeat;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.modifyAdvice .modal-body{
+	margin: 15px 30px 0;
+	padding: 0 20px 30px;
+	background-color: #fff;
+}
+.modifyAdvice .modal-body h2{
+	margin-bottom: 10px;
+	font: bold 20px/60px "Microsoft Yahei";
+	color: #333;
+}
+.modifyAdvice .modal-body h2 span{
+	margin-left: 34px;
+	font-weight: normal;
+	font-size: 16px;
+}
+.modifyAdvice .modal-body textarea{
+	height: 130px;
+	padding-left: 12px;
+	padding-top: 10px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	resize: none;
+}
+.modifyAdvice .modal-footer{
+	padding: 0;
+	padding-bottom: 30px;
+	margin: 0 30px 24px;
+	background-color: #fff;
+}
+.modifyAdvice .modal-footer .btn-save{
+	background-color: #0092e5;
+}
+.modifyAdvice .modal-footer .btn-cancel{
+	background-color: #fff;
+	color: #0092e5;
+	border-color: #0092e5;
+}
+.forumManage  .editor{
+	margin: 15px 0 40px;
+	border: 2px solid #e7e7e7;
+}
+.forumManage .editorT{
+	padding: 0 8px;
+}
+.forumManage .editorT h1{
+	text-align: center;
+	font:24px/74px "Microsoft Yahei";
+}
+.forumManage .editorT .editorArea{
+	margin-bottom: 100px;
+}
+.forumManage .editorB{
+	background-color: #f6f6f6;
+}
+.forumManage .editorB .info {
+	width: 656px;
+	margin: 0 auto;
+	padding: 30px 0 10px 0;
+}
+.forumManage .editorB .info .row {
+	margin-bottom: 20px;
+}
+.forumManage .editorB .info .row label {
+	float: left;
+	width: 58px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #3F3F3F;
+}
+.forumManage .editorB .info .row .itemGroup {
+	float: left;
+	width: 576px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.forumManage .editorB .info .row .itemGroup .itemBox.select {
+	border-color: #EE8A20;
+	background-image: url(../images/jt-edit-icon7.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.forumManage .editorB .info .row .itemGroup.heightAuto {
+	height: auto;
+}
+.forumManage .editorB .info .row .itemGroup .itemBox input{
+	position:absolute;
+	left:-1px;
+	top:-1px;
+	width:130px;
+	height:28px;
+	line-height: 20px;
+	padding:4px;
+	border:1px solid #EF912D;
+	font-size:14px;
+	font-family:"宋体";
+}
+.forumManage .editorB .info .row .itemGroup .new {
+	float: left;
+	padding-left: 43px;
+	width: 130px;
+	height: 28px;
+	line-height: 28px;
+	background: #FFF2EA url(../images/jt-edit-icon4.png) no-repeat 22px center;
+	border: 1px dashed #EF902B;
+	font-size: 14px;
+	color: #3F3F3F;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.forumManage .editorB .info .row .itemGroup .itemBox {
+	float: left;
+	width: 130px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #D8D8D8;
+	font-size: 14px;
+	color: #3F3F3F;
+	margin-right: 12px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	position: relative;
+}
+.forumManage .editorB .info .row .rowIcon {
+	float: left;
+	height: 32px;
+	width: 12px;
+	background: url(../images/jt-edit-icon5.png) no-repeat center;
+	cursor: pointer;
+}
+.forumManage .editorB .info .row .frame {
+	float: left;
+	height: 32px;
+	padding-top: 5px;
+	padding-left: 11px;
+	width: 557px;
+	border: 1px solid #D8D8D8;
+	background-color: #fff;
+}
+.forumManage .editorB .info .row .frame input {
+	height: 22px;
+	line-height: 22px;
+	width: 262px;
+	font-size: 14px;
+	font-family: "宋体";
+	border: none 0;
+}
+.forumManage .editorB .info .row .frame .keyword {
+	float: left;
+	background-color: #666666;
+	line-height: 22px;
+	height: 22px;
+	padding-left: 8px;
+	padding-right: 15px;
+	position: relative;
+	color: #FFF;
+	margin-right: 5px;
+	margin-bottom: 8px;
+}
+.forumManage .editorB .info .row .frame .keyword .close-icon {
+	height: 5px;
+	width: 5px;
+	background-image: url(../images/ez8-close.gif);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+}
+.colorGrey {
+	color: #BEBEBE;
+}

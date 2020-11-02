@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>配置页面</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">
+        <link href="css/seriesBooks.css" rel="stylesheet" type="text/css">  
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始--> 
+    	<div class="theme theme1">
+        	<a href="javascript:void(0)" class="skin"></a>
+            <div class="inner">
+               <div class="panel introduction">
+                   <h4>- 简介 -</h4>
+                   	 <div class="intro">
+                        <p style="display:none"></p>
+                        <textarea></textarea>
+                     </div>
+                     <div class="handle clearfix">
+                     	<a href="javascrpt:void(0)" class="right save">保存</a>
+                        <p class="count right">您已经输入<i class="i1">0</i>字，还可输入<i class="i2">300</i>字</p>
+                        
+                        <script>
+							$(".intro textarea").keyup(function(){
+								var num=$(this).val().length
+								$(".count .i1").text(num)
+								$(".count .i2").text(300-num)
+								 if(num >300){
+									$(this).val($(this).val().substring(0,counts))};
+								})
+                        </script>
+                     </div>
+                   <div class="bg"></div>
+               </div>
+               <div class="panel content">
+                   <div class="con-item">
+                       <div class="con-hd">
+                       <span class="left">属于吃货的节日</span><input type="text" value="" class="left">
+                       <div class="oper right"><a href="javascript:void(0)" class="del"></a><a href="javascript:void(0)" class="edit"></a></div>
+                       </div>
+                       <div class="con-bd">
+                             <div class="ul clearfix">
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                               	   <a href="javascript:void(0)" class="left addbook"></a>
+                               </div>
+                       </div>
+                   </div>
+                   <div class="con-item">
+                       <div class="con-hd">
+                       <span class="left">节日传说</span><input type="text" value="" class="left">
+                       <div class="oper right"><a href="javascript:void(0)" class="del"></a><a href="javascript:void(0)" class="edit"></a></div>
+                       </div>
+                       <div class="con-bd">
+                             <div class="ul clearfix">
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                               	   <a href="javascript:void(0)" class="left addbook"></a>
+                               </div>
+                       </div>
+                   </div>
+                   <div class="con-item">
+                       <div class="con-hd">
+                       <span class="left">节日习俗</span><input type="text" value="" class="left">
+                       <div class="oper right"><a href="javascript:void(0)" class="del"></a><a href="javascript:void(0)" class="edit"></a></div>
+                       </div>
+                       <div class="con-bd">
+                             <div class="ul clearfix">
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                                   <dl>
+                                           <dt><a href="#" target="_blank" title=""><img src="imagesTemp/pic1.jpg" height="183" width="250"></a></dt>
+                                           <dd><h4><a href="#" target="_blank" title="">端午节的传说</a></h4></dd>
+                                           <dd class="info"><span class="editor left">主编：王小花</span><span class="icon right clearfix"><a href="javascript:void(0)" class="icon1"></a><a href="javascript:void(0)" class="icon2"></a></span></dd>
+                                           <a href="javascript:void(0)" class="del"></a>
+                                   </dl>
+                               	   <a href="javascript:void(0)" class="left addbook"></a>
+                               </div>
+                       </div>
+                   </div>
+                   <script>
+				   $(".oper .edit").click(function(){
+					   var span=$(this).parents(".con-hd").find("span")
+					   var input=$(this).parents(".con-hd").find("input")
+					   var text=span.text()
+					   span.hide();
+					   input.show().val("").focus().val(text)
+					   })
+				 $(".con-hd input").blur(function(){
+					 var text=$(this).val()
+					 $(this).hide().siblings("span").show().text(text)
+					})
+				$(".ul dl .info a").click(function(){
+				$(this).toggleClass("click")
+				})
+                   </script>
+                   <a href="javascript:void(0)" class="tjlm">添加栏目</a>
+                   <div class="btnbox">
+                   		<a href="javascript:void(0)" class="save right">保存</a>
+                        <a href="javascript:void(0)" class="preview right">预览</a>
+                   </div>
+               </div>
+            </div>
+        </div>
+     
+     
+     
+     <!--主体部分结束->
+     
+     <!--footer部分开始-->
+      <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+        </div>
+      </div>
+      <!--footer部分结束-->
+        <!--share-->
+        <div class="share color1 start">
+        	<a href="javascript:void(0)" class="a1"><img src="images/collection-share.png" width="32" height="23"></a>
+           <div class="share-btn">
+            <a href="javascript:void(0)" class="sina"><img src="images/collection-weibo.png" width="32" height="32"></a>
+            <a href="javascript:void(0)" class="wechat"><img src="images/collection-wechat.png" width="32" height="32"></a>
+            <a href="javascript:void(0)" class="qq"><img src="images/collection-QQzone.png" width="31" height="32"></a>
+            <a href="javascript:void(0)" class="fold"></a>
+            </div>   
+            <script>
+			    var flag= false
+				$(".share .a1").click(function(){
+					var display=$(".share .share-btn")
+					if(flag=!flag){
+						display.slideDown(300)
+						}
+					else{
+						display.slideUp(300)
+					}})
+				$(".share .fold").click(function(){
+					$(".share .share-btn").slideUp(300)
+					flag=false
+					})
+				$(window).scroll(function(){
+					var top=$(window).scrollTop()
+					var height=$(window).height()
+					var dis=$(".footer").offset().top
+					var fixb=top+height-dis+10
+					if(dis-top<height){
+						$(".share").removeClass("start").css({"bottom":fixb+"px"})
+						}
+					else{$(".share").addClass("start")}
+					})
+            </script>
+        </div>
+        <!--over-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    </body>
+</html>

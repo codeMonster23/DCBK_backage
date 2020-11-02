@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>出版审核</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link href="css/backstage.css" rel="stylesheet">  
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+        <div class="container-fluid padding0">
+            <div class="navbar-left">
+                <a href="" class="logo pull-left"title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+            </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+                <ul class="login-dropdown">
+                    <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+                    <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+                    <li><a href=""><i class="exit"></i>退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--头部部分结束-->
+<!--主体部分开始-->
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-xs-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4 active">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li class="active"><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5 ">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-xs-10 content audit1">
+            <div class="audit-progress">
+                <div class="audit-progress-l">
+                   <p>当前状态：</p>
+                   <p> 待审核（初审）</p>
+                </div>
+                <div class="audit-progress-r">
+                    <ul class="clearfix">
+                       <li class="step1"></li>
+                       <li>初审</li>
+                       <li>政审</li>
+                       <li>质审</li>
+                       <li>终审</li>
+                    </ul>
+                    <div class="progress-info">
+                        <span><p>蒋萌(提交) </p><p>2016-01-25 13:54</p></span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center audit1-h2">经济动态，瞬息万变——再不关注中国，你就out啦 </h2>
+            <div class="tab">
+                <div class="tab-header clearfix">
+                    <div class="tab-nav  pull-left padding0">
+                        <a href="javascript:void(0)" class="active">作品基本信息</a>
+                        <a href="javascript:void(0)" >作品详细内容</a>
+                        <a href="javascript:void(0)">作品审核信息</a>
+                        <a href="javascript:void(0)" class="last">作品操作日志</a>
+                    </div>
+                    <div class="pull-right tab-header-btns">
+                        <a href="">预览作品>></a>
+                        <a href="" class="btn1">查看作品审核报告</a>
+                    </div>
+                </div>
+                <div class="tab-content works-info">
+                <div class="audit-title">作品基本信息 </div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>详细</th>
+                            <th>操作</th>
+                            <th class="last">完善意见</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>标题</td> 
+                            <td class="text-left">经济动态，瞬息万变</td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr>
+                            <td>副标题</td>
+                            <td class="text-left">再不关注中国，你就out啦</td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr>
+                            <td>关键词</td>
+                            <td class="text-left">经济； 基金； 金融； 动态；</td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td>
+                                <a  href="javascript:void(0)"  >
+                                <img  src="images/works-info4.gif" data-toggle="popover" data-container="body" data-animation="true" data-content="宝石，一直以来都是人们最喜爱的装饰品。在琳琅满目的珠宝世界里，有一组艳丽多姿的“佼佼者”，因其材质的特殊性和某种传说而被赋予了特殊的灵性，再加上它们美好的象征意义而倍受人们的青睐，这便是生辰宝石。从16世纪开始，人们就把不同的宝石与一年的12个月相对应，当作个人出生的标志，即被称为“生辰石”或“诞生石”。如今，生辰石已经成为人们用于生日佩带的宝石饰品，或指祝贺生日馈赠的宝石礼品。" data-placement="bottom" data-trigger="hover">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>简介</td>
+                            <td class="text-left"style="max-width:200px;"><p>2015，对中国来说是特殊的一年。在这一年里，中国发生了许多惊天动地的大事，如：中国一带一路引领欧亚
+                            大陆；中国高铁面向国际；中国的阿里巴巴在美国上市，跨国电商风风火火；中国的自贸区惠及百姓，深化改革开
+                            放；昔日的中国首富李嘉诚突然撤资中国，举国哗然；中国金融改革大迈进，人民币成世界货币······
+                            中国这头雄狮正在苏醒，要让这世界刮目相看，让中国威胁论一击即破！</p></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr>
+                            <td>分类</td>
+                            <td class="text-left">人文社科</td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr>
+                            <td>模板</td>
+                            <td class="text-left pic">雅致</td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr>
+                            <td>封面</td>
+                            <td class="text-left pic"><img src="images/works-info1.jpg"></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                        <tr class="last">
+                            <td class="first">封面小图</td>
+                            <td class="text-left pic"><img src="images/works-info2.jpg"></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td><a href=""><img src="images/works-info3.gif"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!--tab-content-->
+                <div class="tab-content detail">
+                <div class="audit-title">作品详细内容  </div>
+                <div class="row mgt10">
+                    <div class="col-sm-4  search">
+                        <div class="input-group">
+                          <input type="text" class="form-control search-input" placeholder="输入关键词，搜索文章">
+                          <div class="input-group-btn"> 
+                            <button class="btn btn-search">搜索</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 audit-checkbox">
+                        <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">全部文章</span></div>
+                        <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">CNKI文章</span></div>
+                        <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">原创文章</span></div>
+                    </div>
+                </div>
+               
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th class="blue catalogue"><a href="" class="">收起章节目录</a>目录</th>
+                            <th>移动</th>
+                            <th>操作</th>
+                            <th class="last">完善意见</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="title">序言:再不关注中国，你就out啦<img src="images/yc-icon1.gif" class="yc-icon"></td> 
+                            <td>--</td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">修改</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon2">
+                                    <img src="images/works-info5.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr class="border-top-1">
+                            <td  class="title">第一章、透视中国“一带一路”</td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif" > </a></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1、为什么是中国?——“一带一路”的经济逻辑 <img src="images/yc-icon2.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon2">
+                                    <img src="images/works-info5.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2、为什么是中国?——“一带一路”的经济逻辑<img src="images/yc-icon1.gif" class="yc-icon"></td>
+                            <td ><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon3">
+                                    <img src="images/works-info6.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3、为什么是中国?——“一带一路”的经济逻辑</td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4、中国与“一带一路”沿线国家贸易格局及其经济贡献<img src="images/yc-icon2.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon3">
+                                    <img src="images/works-info6.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="grey">5、美国对中国“一带一路”倡议的认知与反应</td>
+                            <td class="text-left"></td>
+                            <td class="blue">[<a href="">预览</a>]<span>已删除</span>[<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                        <tr  class="border-top-1">
+                            <td  class="title">第二章、理性看待李嘉诚撤资中国</td>
+                            <td class="text-left"></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>1、九大猜想:李嘉诚为什么撤资中国?<img src="images/yc-icon2.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon2">
+                                    <img src="images/works-info5.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2、理性看待李嘉诚的“撤资”<img src="images/yc-icon1.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon3">
+                                    <img src="images/works-info6.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3、李嘉诚“撤资”的启示</td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                        <tr  class="border-top-1">
+                            <td  class="title">第三章、关注中国自贸区发展</td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">修改</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1、以自贸区战略促进中国产业发展<img src="images/yc-icon2.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon2">
+                                    <img src="images/works-info5.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2、打造中国—东盟自贸区“升级版”:问题与方向<img src="images/yc-icon1.gif" class="yc-icon"></td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                                <div class="wsyj-icon wsyj-icon3">
+                                    <img src="images/works-info6.gif" >
+                                </div>              
+                            </td>
+                        </tr>
+                        <tr class="last">
+                            <td>3、试析美欧日自贸区战略及对中国的启示</td>
+                            <td><a href=""><img src="images/move-icon1.gif" ><img src="images/move-icon2.gif"> </a></td>
+                            <td class="blue">[<a href="">预览</a>][<a href="">删除</a>]</td>
+                            <td class="wsyj">
+                                <div class="wsyj-icon"><img src="images/works-info3.gif"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!--tab-content-->
+                <div class="tab-content audit-info">
+                <div class="audit-title">作品审核信息</div>
+                <table class="table table-responsive audit-table">
+                    <tbody>
+                        <tr>
+                            <td>初审</td> 
+                            <td><a href="" class="btn btn-pass">通过</a><a href="" class="btn btn-return">返回修改</a></td>
+                            <td class="text-left last"><p><b>管理员确认：</b></p><p>无需管理员确认</p></td>
+                        </tr>
+                        <tr>
+                            <td>政审</td> 
+                            <td>--</td>
+                            <td class="last">--</td>
+                        </tr>
+                        <tr>
+                            <td>质审</td> 
+                            <td>--</td>
+                            <td class="last">--</td>
+                        </tr>
+                        <tr class="last">
+                            <td>终审</td> 
+                            <td>--</td>
+                            <td class="last">--</td>
+                        </tr>
+                 
+                    </tbody>
+                </table>
+                </div><!--tab-content-->
+                <div class="tab-content log">
+                <div class="audit-title">作品操作日志</div>
+                <div class="audit-checkbox mgt10">
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">全部</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">修改</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">删除</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">完善信息</span></div>
+                    <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">审核意见</span></div>
+                </div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>位置</th>
+                            <th>类别</th>
+                            <th>详细</th>
+                            <th class="last">操作人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2015-11-21</td> 
+                            <td>标题</td>
+                            <td>提交</td>
+                            <td class="text-left">提交作品</td>
+                            <td>【编客】张三</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21</td> 
+                            <td>内容</td>
+                            <td>修改</td>
+                            <td class="text-left">将“经济动态，瞬息万变”修改为“瞬息万变，经济动态”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21</td> 
+                            <td>标题</td>
+                            <td>删除</td>
+                            <td class="text-left">将文章“为什么是中国?——“一带一路”的经济逻辑”删除</td>
+                            <td>【编客】张三</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21</td> 
+                            <td>内容</td>
+                            <td>修改</td>
+                            <td class="text-left">修改简章</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2015-11-21</td> 
+                            <td>标题</td>
+                            <td>完善信息</td>
+                            <td class="text-left">“第一章、透视中国“一带一路””修改意见“与主题不符合”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr class="last">
+                            <td>2015-11-21</td> 
+                            <td>内容</td>
+                            <td>修改</td>
+                            <td class="text-left">将文章“为什么是中国?——“一带一路”的经济逻辑”上移</td>
+                            <td>【责编】李四</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div><!--tab-content-->
+            </div><!--tab-->
+            <div class="pop pop1">
+                <i class="arrow"></i>
+                <p>确认移交审读室政审吗？</p> 
+                <div><a href="javascript:void(0)" class="btn">确认</a><a href="javascript:void(0)" class="btn   btn-cancel">取消</a></div>
+            </div>
+            <div class="pop pop2">
+                <i class="arrow"></i>
+                <p>确认取消审读室政审吗？</p> 
+                <div><a href="javascript:void(0)" class="btn">确认</a><a href="javascript:void(0)" class="btn btn-cancel">取消</a></div>
+            </div>
+        </div><!--content部分结束-->
+    </div><!--main结束-->
+    <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">©《中国学术期刊（光盘版）》电子杂志社有限公司</div>
+    </div>
+</div><!--container-fluid结束-->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('[data-toggle="popover"]').popover();
+
+    $(".wsyj-icon2 img").click(function(){
+        $(".pop1").show().insertAfter($(this));
+    });
+    $(".wsyj-icon3 img").click(function(){
+        $(".pop2").show().insertAfter($(this));
+    });
+    $(".pop .btn-cancel").click(function(){
+        $(this).parents(".pop").hide();
+    });
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".audit1 .detail table tr:odd").css("background-color","#fafafa");
+    $(".audit1 .detail table tr").each(function(){
+        $(this).find("td:first").addClass('chapter');
+    });
+    $(".audit1 .works-info table tr").each(function(){
+        $(this).find("td:first").css("font-weight","bold");
+    });
+    $(".audit1 .audit-info table tr").each(function(){
+        $(this).find("td:first").css("font-weight","bold");
+    });
+    $("table:last tr:even").css("background-color","#fafafa");
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    $(".sidebar .nav-item").click(function() { 
+        $(this).toggleClass('active').siblings().removeClass('active');
+    }); 
+    $(window).scroll(function(){
+        var h1=$(window).scrollTop();
+        if(h1>206){
+            $(".tab-header").addClass('active');
+            var $nav_a = $(".tab-nav a");
+            var $content = $(".tab-content");
+
+            //监听导航条被点击
+            $nav_a.click(function(){
+                var i = $(this).index();
+                $("html,body").stop(true).animate({"scrollTop":$content.eq(i).offset().top - 40},1000);
+            });
+            //监听窗口的卷动
+            $(window).scroll(function(){
+                var A = $(window).scrollTop();  //已经卷动的高度
+                if(A < $content.eq(1).offset().top - 40){
+                    $nav_a.eq(0).addClass("active").siblings().removeClass("active");
+                }else if(A < $content.eq(2).offset().top - 40){
+                    $nav_a.eq(1).addClass("active").siblings().removeClass("active");
+
+                }else if(A < $content.eq(3).offset().top - 40){
+                    if(A==$("body").height()-$(window).height()){
+                        $nav_a.eq(3).addClass("active").siblings().removeClass("active");
+                    }else{
+                        $nav_a.eq(2).addClass("active").siblings().removeClass("active");
+                    }
+                }
+            });
+        }else{
+            $(".tab-header").removeClass('active');
+        }
+    });
+    $(".checkbox-box .checkbox,.checkbox-label").click(function(){
+        $(this).parent(".checkbox-box").toggleClass('active').siblings().removeClass('active');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>图书审核</title>
+    	<link href="../../css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="../../css/backstage.css" rel="stylesheet">  
+    	<script type="text/javascript" src="../../js/jquery-1.10.1.min.js"></script>
+      <script src="../../laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+      <![endif]-->
+      <style>
+        .works {
+            height: 70px;
+        }
+      </style>
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo">大众知识服务</a><span class="padding-15">|</span><a href="">后台管理系统</a>
+          <div class="sublogo pull-left"><a href="">大成编客</a> <span>&nbsp;|&nbsp;</span> <a href=""><strong>品得书院</strong></a></div>
+        </div> 
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限控制</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1 active">
+            <a href="javascript:void(0)"><i></i><span>图书管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部图书</a></li>
+              <li class="active"><a href="">图书审核</a></li>
+              <li><a href="">纠错管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2">
+            <a href="javascript:void(0)"><i></i><span>品评管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">短评管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item3 ">
+            <a href="javascript:void(0)"><i></i><span>评论管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">品读评论</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-md-10 content">       
+          <div class="breadcrumb-nav">
+            <a href="">首页></a>
+            <a href="">图书管理></a>
+            <a href="">图书审核</a>
+          </div>
+          <div class="works">
+            <div class="col-md-10 col-md-offset-1 ">
+              <div class="row">
+                <div class="col-md-11 col-md-offset-1 padding0">
+                  <div class="row search-box">
+                    <div class="col-md-2 padding0">
+                      <div class="dropdown">
+                        <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">书名<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="">书名</a></li>
+                          <li><a href="">书名</a></li>
+                        </ul>
+                      </div><!--dropdown-->
+                    </div><!--col-md-2-->
+                    <div class="col-md-10 padding0 pdl30">
+                      <div class="row">
+                        <div class="input-group col-md-9 pull-left">
+                          <input type="text" class="form-control search-input">
+                          <div class="input-group-btn"> 
+                            <button class="btn btn-search">搜索</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--col-md-10-->
+                  </div><!--search-box-->
+                </div><!--col-md-10-->
+              </div>
+            </div>
+          </div>
+          <div class="audit">
+            <div class="tab">
+              <div class="tab-nav">
+                <a href="" class="active">全部</a>
+                <a href="">今日</a>
+                <a href="">昨日</a>
+                <a href="">本周</a>
+                <a href="">本月</a>
+                <a href="" class="last">年度</a>
+              </div>
+              <div class="tab-content">
+                <div class="audit-status">
+                  <div class="calendar">
+                    <ul class="inline">
+                      <li class="inline">从</li>
+                      <li class="inline laydate-icon" id="start" style="width:90px;">2016-4-14</li>
+                      <li class="inline">至</li>
+                      <li class="inline laydate-icon" id="end" style="width:90px;">2016-4-14</li>
+                      <li><a href="" class=" skip">跳转</a></li>
+                    </ul>
+                  </div>
+                  <div class="pull-left">
+                    <span class="pull-left">审核状态：</span>
+                    <div class="checkbox-box active">
+                      <span class="checkbox"></span>
+                      <span class="checkbox-label">全部</span>
+                    </div> 
+                    <div class="checkbox-box">
+                      <span class="checkbox"></span>
+                      <span class="checkbox-label">待审核</span>
+                    </div> 
+                    <div class="checkbox-box">
+                      <span class="checkbox"></span>
+                      <span class="checkbox-label">审核通过</span>
+                    </div> 
+                    <div class="checkbox-box">
+                      <span class="checkbox"></span>
+                      <span class="checkbox-label">审核未通过</span>
+                    </div> 
+                  </div>     
+                  <span class="pull-right record">共<i> 189654 </i>条记录</span>
+                </div><!--audit-status-->
+                <table class="table table-responsive audit-table">
+                  <thead>
+                    <tr>
+                      <th>序号</th>
+                      <th>ISBN</th>
+                      <th>书名</th>
+                      <th>作者</th>
+                      <th>出版社</th>
+                      <th>分类</th>
+                      <th>推荐人</th>
+                      <th>提交时间</th>
+                      <th class="last">审核状态</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>978-7-5354-6997-7</td>
+                      <td><a href="">梦里花落知多少</a></td>
+                      <td>张三丰</td>
+                      <td>宁夏出版社</td>
+                      <td>人文社科</td>
+                      <td>陈美华</td>
+                      <td>2018-02-28 18:07:21</td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>978-7-5354-6997-7</td>
+                      <td><a href="">梦里花落知多少</a></td>
+                      <td>张三丰</td>
+                      <td>宁夏出版社</td>
+                      <td>人文社科</td>
+                      <td>陈美华</td>
+                      <td>2018-02-28 18:07:21</td>
+                      <td><a href="" class="btn btn-grey">未通过</a></td>
+                    </tr>
+                    <tr class="last">
+                      <td>03</td>
+                      <td>978-7-5354-6997-7</td>
+                      <td><a href="">梦里花落知多少</a></td>
+                      <td>张三丰</td>
+                      <td>宁夏出版社</td>
+                      <td>人文社科</td>
+                      <td>陈美华</td>
+                      <td>2018-02-28 18:07:21</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="page">
+            <ul>
+              <li class="width-58"><a href="">首页</a></li>
+              <li class="width-58"><a href="">上一页</a></li>
+              <li><a href="" class="cur">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li><a href="">6</a></li>
+              <li>...</li>
+              <li><a href="">987</a></li>
+              <li class="width-58"><a href="">下一页</a></li>
+              <li class="width-58"><a href="">末页</a></li>
+              <li class="width-58 border0 ">跳转到：</li>
+              <li class="border0 width-80">
+                <div class="input-group page-input">
+                  <input type="text" class="form-control txt">
+                  <div class="input-group-btn"> 
+                      <button class="btn btn-search btn-identify">确定</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer">
+          <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+          </div>
+        </div>
+      </div>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $("table tr:even").css("background-color","#f5f5f5");
+    !function(){
+      laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+      laydate({elem: '#demo'});//绑定元素
+      }();
+      //日期范围限制
+      var start = {
+          elem: '#start',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(), //设定最小日期为当前日期
+          max: '2099-06-16', //最大日期
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+               end.min = datas; //开始日选好后，重置结束日的最小日期
+               end.start = datas //将结束日的初始值设定为开始日
+          }
+      };
+      var end = {
+          elem: '#end',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(),
+          max: '2099-06-16',
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+              start.max = datas; //结束日选好后，充值开始日的最大日期
+          }
+      };
+      laydate(start);
+      laydate(end);
+    </script>
+    </body>
+</html>

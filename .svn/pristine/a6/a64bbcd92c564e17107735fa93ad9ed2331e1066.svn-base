@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>角色管理-添加角色</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>角色管理</a></li>
+            <li><a href=""><i class="changePwd"></i>权限管理</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-md-10 content content1 role-manage add-role">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">角色管理></a>
+              <a href="">添加角色</a>
+            </div>
+            <h2 class="text-center audit1-h2">CNKI大成编客后台管理系统（添加角色）</h2>
+            <form>
+              <div class="form-group">
+                <div class="col-md-5 pdr0">
+                  <label class="col-md-2 control-label pdl0 pdr0">角色分类：</label>
+                  <div class="col-md-10 pdl0">
+                    <div class="dropdown">
+                      <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">请选择角色分类<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="">系统角色</a></li>
+                        <li><a href="">作品审核角色</a></li>
+                        <li><a href="">其他角色</a></li>
+                      </ul>
+                    </div><!--dropdown-->
+                  </div>
+                </div>
+                <div class="col-md-7 pdl0">
+                  <label class="col-md-2 control-label">角色名称:</label>
+                  <div class="col-md-10 pdl0 pdr0">
+                    <input type="text" class="form-control" placeholder="请填写角色名称">
+                  </div>
+                </div>
+              </div><!--form-group-->
+              <div class="form-group margin0 zzms">
+                <label class="col-md-1 control-label">职责描述:</label>
+                <div class="col-md-11 pdl0">
+                  <textarea class="zzms-input"></textarea>
+                </div>
+              </div><!--form-group-->
+            </form>
+            <div class="list">
+              <h3>权限管理</h3>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">首页</span></div>
+              </div>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">用户管理</span></div>
+              </div>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">订单管理</span></div>
+              </div>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">主编管理</span></div>
+              </div>
+              <div class="list-nav list-nav1 clearfix">
+                <div class="listNav-l pull-left">
+                  <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">出版审核</span></div>
+                </div>
+                <div class="listNav-r pull-left">
+                  <div class="list-nav">
+                    <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">责编认证</span></div>
+                  </div>
+                  <div class="list-nav">
+                    <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">编辑管理</span></div>
+                  </div>
+                  <div class="zpsh clearfix">
+                    <div class="left pull-left">
+                      <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品审核</span></div>
+                    </div>
+                    <div class="right pull-left">
+                      <ul>
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品列表显示</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">全部作品</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">分类下的作品</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">指派的作品</span></div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品操作</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">全部作品</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">分类下的作品</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">指派的作品</span></div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品审核人指派 </span></div></li>
+                      </ul>
+                      <ul>
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">政审环节</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">原创转移</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品审核人指派</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                        </li>
+                      </ul>
+                      <ul class="height59">
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label"><p>政审</p><p class="p2">返回修改-待确认</p></span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">单项意见填写</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">综合意见修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">下一环节指定</span></div>
+                        </li>
+                      </ul>
+                      <ul >
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">质审环节</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                        </li>
+                      </ul>
+                      <ul class="height59">
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label"><p>质审</p><p class="p2">返回修改-待确认</p></span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">综合意见修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">下一环节指定</span></div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">终审环节</span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                        </li>
+                      </ul>
+                      <ul class="height59 last">
+                        <li class="first"><div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label"><p>终审</p><p class="p2">返回修改-待确认</p></span></div></li>
+                        <li>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息预览</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">信息修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">意见填写</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">综合意见修改</span></div>
+                          <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">下一环节指定</span></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="list-nav">
+                 <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">作品管理</span></div>
+              </div>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">收益分成</span></div>
+              </div>
+              <div class="list-nav">
+                <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">内容更新</span></div>
+              </div>
+              <div class="list-nav list-nav2 last">
+                <div class="listNav-l pull-left">
+                  <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">后台管理</span></div>
+                </div>
+                 <div class="listNav-r pull-left">
+                  <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">权限管理</span></div>
+                  <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">基本资料管理</span></div>
+                  <div class="checkbox-box1 active"><span class="checkbox"></span><span class="checkbox-label">密码修改</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="btns text-center">
+                <a href="" class="btn btn1">确定</a>
+                <a href="" class="btn btn2">取消</a>
+              </div>
+          </div> <!--row结束-->
+        </div> <!--content部分结束-->
+      </div>
+      <div class="row footer">
+        <div class="col-md-10 col-md-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".sidebar .nav-item").click(function(){
+      $(this).toggleClass('active').siblings().removeClass('active');
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+
+    $(".checkbox-box11 .checkbox,.checkbox-label").click(function(){
+      $(this).parent(".checkbox-box11").toggleClass('active').siblings().removeClass('active');
+    });
+    $("table tr:even td").css("background-color","#fcfcfc");
+    var zpshRHeight=$(".zpsh .right").height();
+    $(".zpsh .left").height(zpshRHeight);
+    $(".zpsh .left").css("padding-top",(zpshRHeight-30)/2+"px");
+    var listNav1_RHeight=$(".list-nav1 .listNav-r").height();
+    $(".list-nav1  .listNav-l").height(listNav1_RHeight);
+    $(".list-nav1  .listNav-l").css("padding-top",(listNav1_RHeight-30)/2+"px");
+    </script>
+    </body>
+</html>

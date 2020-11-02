@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+/*百科*/
+.tabn{ margin-top:25px; line-height:20px; height:30px; border-bottom:3px solid #0A92E3; margin-bottom:10px; font-size:14px; color:#4b4b4b;}
+.tabn a{ color:#4b4b4b;}
+.tabn a.cur{ color:#0A92E3; font-weight:bold;}
+.tabc .items .new{ float:left; font-weight:bold; width:165px; height:33px; text-align:center; line-height:33px; color:#ffffff; font-size:14px; background-color:#0A92E3;}
+.tabc .items .itemwrap{ margin-left:175px; margin-bottom:10px;}
+.tabc .items .itemwrap .item{ float:left; position:relative;width:260px; height:33px; line-height:33px; border:1px solid #C8C8C8; padding-left:9px; font-size:14px; margin-right:10px; margin-bottom:10px;}
+.tabc .items .itemwrap .item p{ margin:0;}
+.tabc .items .itemwrap .item.edit{ border-color:#0A92E3;}
+.tabc .items .itemwrap .item .btn1{ position:absolute; top:10px; right:23px; width:12px; height:12px; background:url(../images/dd-icon1.png) no-repeat;}
+.tabc .items .itemwrap .item .btn2{ position:absolute; top:10px; right:8px; width:11px; height:12px; background:url(../images/dd-icon2.png) no-repeat;}
+.tabc .items .itemwrap .item .editwrap{ display:none; position:absolute; left:8px; top:0; background:#ffffff;}
+.tabc .items .itemwrap .item .editwrap input{ float:left; padding:5px 0 6px 0; line-height:20px; color:#0A92E3; font-family:"宋体"; width:151px;}
+.tabc .items .itemwrap .item .editwrap .btn3{ float:left; width:44px; line-height:25px; text-align:center; margin-top:3px; background-color:#0A92E3; color:#ffffff; margin-right:5px;}
+.tabc .items .itemwrap .item .editwrap .btn4{ float:left;width:44px; line-height:23px; text-align:center; margin-top:3px; border:1px solid #0A92E3; color:#0A92E3; }
+.tabc .addWrap{ margin-bottom:30px;}
+.tabc .addWrap h1{ width:165px; height:33px; line-height:33px; text-align:center; background-color:#0092E5; color:#ffffff; font-size:14px; font-weight:bold;}亲
+.tabc .addWrap .area{ border:1px solid #0A92E3; position:relative; padding:20px 0 20px 9px; font-size:14px;}
+.tabc .addWrap .area .close{ position:absolute; top:0; right:0; width:21px; height:21px; background:#0092E5 url(../images/icon1.png) no-repeat center; opacity:1;}
+.tabc .addWrap .area .sam{ margin-bottom:10px;}
+.tabc .addWrap .area .item1{ padding-left:11px;}
+.tabc .addWrap .area input{ float:left; line-height:33px; height:33px; padding-left:10px; border:1px solid #C9C9C9; width:281px;}
+.tabc .addWrap .area .item1 input{ width:509px;}
+.tabc .addWrap .area .item1 .get{ float:left; font-size:14px; width:84px; height:33px; line-height:33px; text-align:center; color:#ffffff; background-color:#0092E5;}
+.tabc .addWrap .area label{ float:left; width:117px; text-align:right; font-weight:bold; line-height:33px; padding-right:10px;}
+.tabc .addWrap .area .select{ float:left; width:180px; height:33px; border:1px solid #C9C9C9; position:relative; cursor:pointer;}
+.tabc .addWrap .area .select p{ line-height:33px; padding-left:10px; background:url(../images/dd-icon3.png) no-repeat 159px center; font-size:14px; color:#000000;}
+.tabc .addWrap .area .select ul{ display:none; position:absolute; width:180px; border:1px solid #C9C9C9; top:31px; left:-1px; background-color:#ffffff; z-index:100;}
+.tabc .addWrap .area .select ul li{ padding-left:10px; line-height:24px;}
+.tabc .addWrap .area textarea{ float:left;width:517px;height:135px;border:1px solid #C9C9C9;}
+.tabc .addWrap .area .tips{ line-height:30px; font-size:12px; color:#9D9D9D;}
+.tabc .addWrap .area .tips p{ float:left; padding-left:117px; width:398px;}
+.tabc .addWrap .area .sure{ display:block; margin-left:117px;width:175px;height:48px; line-height:48px; text-align:center;font-size:16px;font-weight:bold; color:#ffffff; background-color:#0092E5;}
+/*作者*/
+.tabc .intro{ padding-top:20px; margin-bottom:15px;}
+.tabc .intro label{ float:left; width:77px; font-size:14px; font-weight:bold; line-height:32px; height:32px;}
+.tabc .intro textarea{ width:851px; height:271px; border:1px solid #C9C9C9;}
+.tabc .intro .save{ display:block; clear:both; width:175px; height:48px; text-align:center; line-height:48px; background-color:#0092E5; font-size:16px; font-weight:bold; color:#ffffff; margin-left:77px; margin-top:15px;}
+.tabc .addWrap .book{ margin-bottom:10px;}
+.tabc .addWrap .book label{ float:left; padding-left:20px; padding-right:10px; line-height:33px; font-size:14px; font-weight:bold;}
+.tabc .addWrap .book input{ float:left; width:480px; line-height:33px; height:33px; border:1px solid #C9C9C9; padding-left:6px;}
+.tabc .addWrap .book .upload{ float:left; /*width:148px; height:33px; line-height:33px; text-align:center; background:url(../images/dd-icon4.gif) no-repeat; color:#0092E5; font-size:14px;*/}
+.tabc .addWrap .book .retry{ float:left; margin-left:10px; font-size:14px; color:#0A92E3; padding-top:130px;}
+.tabc .addWrap .book p{ clear:both; line-height:24px; color:#9D9D9D; padding-left:120px; font-size:12px;}
+.tabc .addWrap .tabw h1{ float:left; margin-right:25px;}
+.tabc .addWrap .tabw h1.green{ width:165px; background-color:#18B412;}
+.tabc .addWrap .pm{ margin-bottom:30px; margin-top:15px;}
+.tabc .addWrap .pm label{ width:57px;}
+.tabc .addWrap .pm input{ width:546px;}
+.tabc .addWrap .area.green{ border-color:#18B412;}
+.tabc .addWrap .area.green .close{ background-color:#18B412;}
+.tabc .addWrap .jsitem input{ width:180px;}
+.tabc .addWrap .jsitem .addb{ float:left; margin-left:10px; width:11px; height:33px; background:url(../images/icon2.png) no-repeat center; }
+.tabc .addWrap .jsitem .minb{ float:left; margin-left:10px; width:11px; height:33px; background:url(../images/icon3.png) no-repeat center; }
+/*学者*/
+.table-item .avatar{ border-radius:50%;}
+.tabc .addWrap .bookman input{ width:300px;}
+/*.tabc .addWrap .bookman .avatar{ float:left; }
+.tabc .addWrap .bookman .avatar img{border-radius:50%; margin-bottom:10px;}
+.tabc .bookman .upload{ float:left; width:148px; height:33px; line-height:33px; text-align:center; background:url(../../images/book/dd-icon4.gif) no-repeat; color:#0092E5; font-size:14px;}
+.tabc .addWrap .bookman .avatar .upload{ float:none; display:block;}*/
+.tabc .addWrap .bookman .tips{ position:relative; /*top:-98px;*/ clear:both; padding-left:755px; line-height:16px; margin:10px 0; word-break:break-all; width:1400px;}
+/*书刊*/
+.tit{ border-bottom:3px solid #0992E3; line-height:30px; font-size:14px; color:#0992E3; margin-bottom:15px;}
+.tit span{ font-size:12px; padding-left:10px; color:#666666; }
+/*出版社详情*/
+.audit .tab-nav .intoHome{ float:right; width:165px; height:33px; text-align:center; line-height:33px; background-color:#0A92E3; color:#ffffff;}
+.newm{ float:right; width:165px; height:33px; text-align:center; line-height:33px; background-color:#0A92E3; color:#ffffff;}
+/*新增管理员*/
+.modal-header{ margin-bottom:20px;}
+.modal5 .form-horizontal .control-label, .modal12 .form-horizontal .control-label{ text-align:right;}
+/*收益总览*/
+.syzl .audit-status{ padding-top:15px;}

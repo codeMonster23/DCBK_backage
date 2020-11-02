@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>机构申请</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">  
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1">
+            <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">用户基本信息</a></li>
+              <li><a href="">第三方登录管理</a></li>
+              <li><a href="">用户操作信息</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2">
+            <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">订单查询</a></li>
+              <li><a href="">充值方式统计</a></li>
+              <li><a href="">补单管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item3">
+            <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">主编认证</a></li>
+              <li><a href="">主编信息</a></li>
+              <li><a href="">主编权限控制</a></li>
+              <li><a href="">主编操作信息</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item4 ">
+            <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">责编认证</a></li>
+              <li><a href="">编辑管理</a></li>
+              <li><a href="">作品审核</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item5">
+            <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部作品</a></li>
+              <li><a href="">精品推荐</a></li>
+              <li><a href="">价格管理</a></li>
+              <li><a href="">分类管理</a></li>
+              <li><a href="">发布与下架</a></li>
+              <li><a href="">下架申请</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item7">
+            <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">责编认证</a></li>
+              <li><a href="">编辑管理</a></li>
+              <li><a href="">作品审核</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item6">
+            <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">首页更新</a></li>
+              <li><a href="">认证首页更新</a></li>
+              <li><a href="">主编推荐更新</a></li>
+              <li><a href="">教育频道更新</a></li>
+              <li><a href="">生活频道更新</a></li>
+              <li><a href="">营销频道更新</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item11">
+            <a href="javascript:void(0)"><i></i><span>机构管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first "><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item12">
+            <a href="javascript:void(0)"><i></i><span>意见反馈</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          
+          <div class="nav-item nav-item13">
+            <a href="javascript:void(0)"><i></i><span>评论管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item14">
+            <a href="javascript:void(0)"><i></i><span>比赛管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item15">
+            <a href="javascript:void(0)"><i></i><span>系列丛书</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item17">
+            <a href="javascript:void(0)"><i></i><span>涉密文章查询</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content secretArticle">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">涉密文章查询</a>
+            </div>
+            <div class="audit">
+              <div class="tab">
+                <div class="tab-content">
+                  <button type="button" class="search">涉密文章查询</button>
+                  <div class="title clearfix"><span class="pull-left">检索时间：2017年12月31日 13:13:13</span><a href="" class="pull-right">导出表格</a></div>
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr>
+                        <th>序号</th>
+                        <th>文章ID</th>
+                        <th>文章名</th>
+                        <th>文集ID</th>
+                        <th>文集名</th>
+                        <th class="last">类型</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>涉密</td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>已删除</td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>涉密</td>
+                      </tr>
+                      <tr>
+                        <td>04</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>已删除</td>
+                      </tr>
+                      <tr>
+                        <td>05</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>涉密</td>
+                      </tr>
+                      <tr class="last">
+                        <td>06</td>
+                        <td>YD7172371S123</td>
+                        <td><a href="">中印边界新冲突？印媒：双方士兵互掷石块！</a></td>
+                        <td>6532</td>
+                        <td><a href="">凤凰新闻</a></td>
+                        <td>已删除</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row footer">
+            <div class="col-sm-10 col-sm-offset-2 text-center">
+              ©《中国学术期刊（光盘版）》电子杂志社有限公司
+            </div>
+          </div>
+        </div><!--content部分结束-->
+      </div> <!--main部分结束-->
+    </div>  
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".sidebar .nav-item").click(function(){
+      $(this).toggleClass('active').siblings().removeClass('active');
+    });
+    $("table tr:even").css("background-color","#f5f5f5");
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    </script>
+    </body>
+</html>

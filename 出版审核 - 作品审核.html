@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>出版审核</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">  
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-xs-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4 active">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li class="active"><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5 ">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-xs-10 content">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">出版审核></a>
+              <a href="">作品审核</a>
+            </div>
+            <div class="works">
+              <div class="col-xs-10 col-xs-offset-1">
+                <div class="row works-search">
+                  <div class="col-xs-10 col-sm-offset-1 padding0">
+                    <div class="row search-box">
+                      <div class="col-xs-2 padding0">
+                        <div class="dropdown">
+                          <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">作品名称<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li class="active"><a href="">作品编码</a></li>
+                            <li><a href="">主编真实姓名</a></li>
+                            <li><a href="">主编昵称</a></li>
+                            <li><a href="">主编用户名</a></li>
+                            <li><a href="">初审编辑</a></li>
+                          </ul>
+                        </div><!--dropdown-->
+                      </div><!--col-sm-2-->
+                      <div class="col-xs-10 padding0 pdl20">
+                        <div class="input-group">
+                          <input type="text" class="form-control search-input">
+                          <div class="input-group-btn"> 
+                            <button class="btn btn-search">搜索</button>
+                          </div>
+                        </div>
+                      </div><!--col-sm-10-->
+                    </div><!--search-box-->
+                  </div><!--col-sm-10--></div>
+                <div class="row works-classify">
+                  <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                      <div class="col-xs-2 padding0 works-classify-title">作品分类：</div><!--col-sm-2-->
+                      <div class="col-xs-10 padding0">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">一级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">二级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="dropdown">
+                              <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">三级分类（全部）<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li class="active"><a href="">生活休闲</a></li>
+                                <li><a href="">教育教学</a></li>
+                                <li><a href="">经济管理</a></li>
+                                <li><a href="">政法军事</a></li>
+                                <li><a href="">人文社科</a></li>
+                                <li><a href="">医药卫生</a></li>
+                              </ul>
+                            </div><!--dropdown-->
+                          </div>
+                        </div>
+                      </div><!--col-sm-10-->
+                    </div>
+                  </div><!--col-sm-10--></div> 
+                </div>
+              </div>
+            </div>
+  
+            <div class="row audit">
+              <div class="tab">
+                <div class="tab-nav">
+                  <a href="" class="active">全部</a>
+                  <a href="">今日</a>
+                  <a href="">昨日</a>
+                  <a href="">本周</a>
+                  <a href="">本月</a>
+                  <a href="" class="last">年度</a>
+                </div>
+                <div class="tab-content">
+                  <div class="audit-status">
+                    <div class="calendar">
+                      <ul class="inline">
+                        <li class="inline">从</li>
+                        <li class="inline laydate-icon" id="start" style="width:90px;">2016-4-14</li>
+                        <li class="inline">至</li>
+                        <li class="inline laydate-icon" id="end" style="width:90px;">2016-4-14</li>
+                        <li><a href="" class=" skip">跳转</a></li>
+                      </ul>
+                    </div>
+                    <div class="pull-left">
+                       <span class="pull-left">审核状态：</span>
+                        <a href="" class="btn btn-a cur">全部</a>
+                        <div class="dropdown">
+                          <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">待审核（全部）<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li class="active"><a href="">待审核（初审）</a></li>
+                            <li><a href="">待审核（质审）</a></li>
+                            <li><a href="">待审核（政审）</a></li>
+                            <li><a href="">待审核（终审）</a></li>
+                          </ul>
+                        </div><!--dropdown-->
+                        <a href="" class="btn">审核通过</a>
+                        <div class="dropdown">
+                          <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">返回修改（全部）<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li class="active"><a href="">返回修改（初审）</a></li>
+                              <li><a href="">返回修改（质审）</a></li>
+                              <li><a href="">返回修改（政审）</a></li>
+                              <li><a href="">返回修改（终审）</a></li>
+                            </ul>
+                        </div><!--dropdown-->
+                    </div>     
+                    <div class="pull-right">
+                       <span class="pull-left record">共<i> 189654 </i>条记录</span>
+                        <a href="" class="btn">提交时间</a>
+                        <a href="" class="btn last cur">最后操作</a>
+                    </div>
+                  </div><!--audit-status-->
+                  <table class="table table-responsive audit-table">
+                  <thead>
+                    <tr>
+                      <th>序号</th>
+                      <th class="text-left">作品名称</th>
+                      <th>作者</th>
+                      <th>作品分类</th>
+                      <th>作品提交时间</th>
+                      <th>最后操作时间</th>
+                      <th>周期</th>
+                      <th>初审</th>
+                      <th>政审</th>
+                      <th>质审</th>
+                      <th>终审</th>
+                      <th class="last text-left">负责人</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td class="text-left">婚姻法纵横（2016版）</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">韩京锎【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td class="text-left" style="max-width:189px;">中国古代文艺女性体验的审美....</td>
+                      <td>《煤炭科学 技术》....</td>
+                      <td>CNKI 冶金工业</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">审读室【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>03</td>
+                      <td class="text-left">中西医结合治疗痛风</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td class="blue text-left">韩京锎 [<a href="">指派质审</a>] [<a href="">进入终审</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>04</td>
+                      <td class="text-left">重有色金属冶炼烟气处理及低...</td>
+                      <td>电力工业</td>
+                      <td>有色金属 冶炼</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td class="blue text-left">韩京锎 [<a href="">指派终审</a>] </td>
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td class="text-left">中学英语教学法</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td class="text-left">李国战【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>06</td>
+                      <td class="text-left">藻类养殖与利用</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">返回主编修改</td>
+                    </tr>
+                    <tr>
+                      <td>07</td>
+                      <td class="text-left">英国文学概况研究</td>
+                      <td>董娜</td>
+                      <td>职业教育</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">审阅室 [<a href="">待确认</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>08</td>
+                      <td class="text-left">资源加工论文汇编</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td class="blue text-left">韩京锎 [<a href="">待确认</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>09</td>
+                      <td class="text-left">修行即在大学时</td>
+                      <td>董娜</td>
+                      <td>肿瘤外科</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td class="blue text-left">李国战<a href="">[待确认]</a></td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td class="text-left">高速铁路动车组</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td class="blue text-left">韩京锎 [<a href="">待确认</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td class="text-left">婚姻法纵横（2016版）</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">韩京锎【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td class="text-left">中国古代文艺女性体验的审美...</td>
+                      <td>《煤炭科学 技术》....</td>
+                      <td>CNKI 冶金工业</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">审读室【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td class="text-left">中西医结合治疗痛风</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td></td>
+                      <td class="blue text-left">韩京锎 [<a href="">指派质审</a>] [<a href="">进入终审</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td class="text-left">重有色金属冶炼烟气处理及低...</td>
+                      <td>电力工业</td>
+                      <td>有色金属 冶炼</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-orange">待审核</a></td>
+                      <td class="blue text-left">韩京锎 [<a href="">指派终审</a>] </td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td class="text-left">中学英语教学法</td>
+                      <td>莫里斯</td>
+                      <td>生活休闲</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td class="text-left">李国战【审核】</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td class="text-left">藻类养殖与利用</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left">返回主编修改</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td class="text-left">英国文学概况研究</td>
+                      <td>董娜</td>
+                      <td>职业教育</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-left blue">审阅室[<a href="">待确认</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td class="text-left">资源加工论文汇编</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td class="text-left blue">韩京锎 [<a href="">待确认</a>]</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td class="text-left">修行即在大学时</td>
+                      <td>董娜</td>
+                      <td>肿瘤外科</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>1</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td class="text-left blue">李国战<a href="">[待确认]</a></td>
+                    </tr>
+                    <tr class="last">
+                      <td>20</td>
+                      <td class="text-left">高速铁路动车组</td>
+                      <td>电力工业</td>
+                      <td>铁路运输</td>
+                      <td>2012/01/03</td>
+                      <td>2012/01/03</td>
+                      <td>3</td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-green">通过</a></td>
+                      <td><a href="" class="btn btn-grey">返回修改</a></td>
+                      <td></td>
+                      <td class="text-left blue">韩京锎 [<a href="">待确认</a>]</td>
+                    </tr>       
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="page">
+              <ul>
+                <li class="width-58"><a href="">首页</a></li>
+                <li class="width-58"><a href="">上一页</a></li>
+                <li><a href="" class="cur">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li>...</li>
+                <li><a href="">987</a></li>
+                <li class="width-58"><a href="">下一页</a></li>
+                <li class="width-58"><a href="">末页</a></li>
+                <li class="width-58 border0 ">跳转到：</li>
+                <li class="border0 width-80">
+                  <div class="input-group page-input">
+                    <input type="text" class="form-control txt">
+                    <div class="input-group-btn"> 
+                        <button class="btn btn-search btn-identify">确定</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div> <!--content部分结束-->
+        <div class="row footer">
+          <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+          </div>
+        </div>
+      </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".sidebar .nav-item").click(function(){
+      $(this).toggleClass('active').siblings().removeClass('active');
+    });
+    $("table tr:even").css("background-color","#f5f5f5");
+    $("table tr").each(function(){
+      $(this).find("td:eq(1)").css("color","#0c96e5");
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    !function(){
+      laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+      laydate({elem: '#demo'});//绑定元素
+      }();
+      //日期范围限制
+      var start = {
+          elem: '#start',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(), //设定最小日期为当前日期
+          max: '2099-06-16', //最大日期
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+               end.min = datas; //开始日选好后，重置结束日的最小日期
+               end.start = datas //将结束日的初始值设定为开始日
+          }
+      };
+      var end = {
+          elem: '#end',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(),
+          max: '2099-06-16',
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+              start.max = datas; //结束日选好后，充值开始日的最大日期
+          }
+      };
+      laydate(start);
+      laydate(end);
+    </script>
+    </body>
+</html>

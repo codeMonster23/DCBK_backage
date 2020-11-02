@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal1">开始演示模态框1</button>-->
+    <!-- 模态框（Modal）1 -->
+    <div class="modal fade modal1" tabindex="-1" data-backdrop="static" data-keyboard="false">
+       <div class="modal-dialog">
+       		<!--弹框1 -->
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">
+                  	请填写完善意见
+                	</h4>
+             	</div>
+             	<div class="modal-body">
+             		<div class="por">
+             			<textarea cols="20" rows="10"></textarea>
+						<a href="" class="delete-icon">清空意见</a>
+             		</div>
+             	</div>
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save"  data-dismiss="modal">保存</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+             	</div>
+          	</div><!-- /.modal-content 弹框1结束-->
+      	</div><!-- /.modal -->
+    </div>
+    <!--模态框结束-->
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('.modal1').modal('show');
+    </script>
+    </body>
+</html>

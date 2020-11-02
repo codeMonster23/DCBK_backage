@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>书刊推荐</title>
+    	<link href="../../css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="../../css/backstage.css" rel="stylesheet">  
+    	<link href="../css/book.css" rel="stylesheet">  
+        <link href="../css/bookother.css" rel="stylesheet" type="text/css">
+    	<script type="text/javascript" src="../../js/jquery-1.10.1.min.js"></script>
+        <script src="../js/divSelect.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo">大众知识服务</a><span class="padding-15">|</span><a href="">后台管理系统</a>
+          <div class="sublogo pull-left"><a href="">大成编客</a> <span>&nbsp;|&nbsp;</span> <a href=""><strong>品得书院</strong></a></div>
+        </div> 
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限控制</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1">
+            <a href="javascript:void(0)"><i></i><span>图书管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">图书审核</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2">
+            <a href="javascript:void(0)"><i></i><span>出版社管理</span><b></b></a>
+          </div>
+          <div class="nav-item nav-item3">
+            <a href="javascript:void(0)"><i></i><span>收益管理</span><b></b></a>
+          </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-md-10 content book-section4">
+          <div class="breadcrumb-nav">
+            <a href="">首页></a>
+            <a href="">图书管理 ></a>
+            <a href="">全部图书</a>
+          </div>
+          <div class="audit-progress hcsb">
+            <div class="audit-progress-l width-150 yfb">
+                <p>图书类型：合作书</p>
+                <p>当前状态：已上架</p>
+            </div>
+            <div class="audit-progress-r clearfix">
+                <span>操作：</span>
+                <a href="" class="btn btn1">PDF预览</a>
+                <a href="" class="btn btn1">打开原书链接</a>
+                <a href="" class="btn btn2">下架</a>
+            </div>
+          </div>
+          <h2 class="text-center audit1-h2"><img src="../images/book.jpg" width="49" height="69" alt="">陆叶儿童诗诗集——读小诗学大道理 </h2>
+          <div class="tabnav clearfix">
+            <a href="">图书基本信息</a>
+            <a href="">图书分类信息</a>
+            <a href="">书友品评</a>
+            <a href="">专家导读</a>
+            <a href="" >品得百科</a>
+            <a href="">书友品评</a>
+            <a href="" class="cur">书刊推荐</a>
+            <a href="">备注信息</a>
+            <a href="">品得百科</a>
+          </div>
+          <div class="tit"><strong>荐书</strong><span>例：同作者、同出版社、同属丛书、同主题、同分类、同奖项、其他</span></div> 
+          <!--荐书-->
+          <div class="tabc c1">
+          <div class="items clearfix">
+          		<a href="javascript:;" class="new">+ 新建图书分类</a>
+                <div class="itemwrap clearfix">
+                	<div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="table-item">
+            <table class="table table-responsive audit-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>CODE</th>
+                  <th>文章标题</th>
+                   <th>封面</th>
+                  <th>链接</th>
+                  <th>分类</th>
+                  <th>热度</th>
+                  <th class="last" width="107">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                 <td>01</td>
+                 <td>DZ1808090087</td>
+                  <td><a href="">民国奇女子</a></td>
+                  <td><img src="../images/book.jpg" width="40" height="56"></td>
+                  <td><a href="">http://xuewen.cnki.net/R200605014.html</a></td>
+                  <td>同作者</td>
+                  <td>90</td>
+                  <td>[<a href="">编辑</a>][<a href="">删除</a>]</td>
+                </tr>              
+                <tr class="last">
+                  <td>02</td>
+                 <td>DZ1808090087</td>
+                  <td><a href="">民国奇女子</a></td>
+                  <td><img src="../images/book.jpg" width="40" height="56"></td>
+                  <td><a href="">http://xuewen.cnki.net/R200605014.html</a></td>
+                  <td>同作者</td>
+                  <td>90</td>
+                  <td>[<a href="">编辑</a>][<a href="">删除</a>]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+		<!--添加图书-->
+          <div class="addWrap">
+          	<h1>添加图书</h1>
+            <div class="area">
+            	<a href="javascript:;" class="close"></a>
+                <div class="sam item1 clearfix">
+                	<input type="text" placeholder="请输入文章CODE">
+                    <a href="javascript:;" class="get"><strong>搜索</strong></a>
+                </div>
+   				<div class="book clearfix">
+                	<label>书名:</label>
+                    <input type="text">
+                   </div>
+                <div class="book clearfix">
+                     <label>链接:</label>
+                  <input type="text">
+                  <p>例：http://xuewen.cnki.net/R200605014.html</p>
+                </div>
+                 <div class="book clearfix">
+                    <label>封面:</label>
+                    <a href="javascript:;" class="upload"><img src="../images/book.jpg" width="110" height="155"></a>
+                    <a href="javascript:;" class="retry">重新上传</a>
+                      </div>
+                   <div class="sam jsitem clearfix">
+                    <label>分类:</label>
+                    <div class="select">
+                    	<p>相关人物</p>
+                        <ul>
+                        	<li>关键词</li>
+                            <li>关</li>
+                            <li>关词</li>
+                            <li>关键词词</li>
+                        </ul>
+                     </div>
+                </div>
+                <a href="javascript:;" class="sure">确认添加</a>
+               
+            </div>
+          </div>
+           <!--荐刊-->
+           <div class="tit"><strong>荐刊</strong><span>例：同主题、同分类、其他</span></div> 
+           <div class="items clearfix">
+          		<a href="javascript:;" class="new">+ 新建图书分类</a>
+                <div class="itemwrap clearfix">
+                	<div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                    	<p>地方风土人情</p>
+                        <a href="javascript:;" class="btn1"></a>
+                        <a href="javascript:;" class="btn2"></a>
+                        <div class="editwrap">
+                        	<input type="text">
+                            <a href="javascript:;" class="btn3">确定</a>
+                            <a href="javascript:;" class="btn4">取消</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="table-item">
+            <table class="table table-responsive audit-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>CODE</th>
+                  <th>刊名</th>
+                   <th>封面</th>
+                  <th>链接</th>
+                  <th>分类</th>
+                  <th>热度</th>
+                  <th class="last" width="107">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                 <td>01</td>
+                 <td>DZ1808090087</td>
+                  <td><a href="">民国奇女子</a></td>
+                  <td><img src="../images/book.jpg" width="40" height="56"></td>
+                  <td><a href="">http://xuewen.cnki.net/R200605014.html</a></td>
+                  <td>同作者</td>
+                  <td>90</td>
+                  <td>[<a href="">编辑</a>][<a href="">删除</a>]</td>
+                </tr>              
+                <tr class="last">
+                  <td>02</td>
+                 <td>DZ1808090087</td>
+                  <td><a href="">民国奇女子</a></td>
+                  <td><img src="../images/book.jpg" width="40" height="56"></td>
+                  <td><a href="">http://xuewen.cnki.net/R200605014.html</a></td>
+                  <td>同作者</td>
+                  <td>90</td>
+                  <td>[<a href="">编辑</a>][<a href="">删除</a>]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--添加图书-->
+          <div class="addWrap">
+          	<h1>添加期刊</h1>
+            <div class="area">
+            	<a href="javascript:;" class="close"></a>
+                <div class="sam item1 clearfix">
+                	<input type="text" placeholder="请输入文章CODE">
+                    <a href="javascript:;" class="get"><strong>搜索</strong></a>
+                </div>
+   				<div class="book clearfix">
+                	<label>书名:</label>
+                    <input type="text">
+                   </div>
+                <div class="book clearfix">
+                     <label>链接:</label>
+                  <input type="text">
+                  <p>例：http://xuewen.cnki.net/R200605014.html</p>
+                </div>
+                 <div class="book clearfix">
+                    <label>封面:</label>
+                    <a href="javascript:;" class="upload"><img src="../images/book.jpg" width="110" height="155"></a>
+                    <a href="javascript:;" class="retry">重新上传</a>
+                      </div>
+                   <div class="sam jsitem clearfix">
+                    <label>分类:</label>
+                    <div class="select">
+                    	<p>相关人物</p>
+                        <ul>
+                        	<li>关键词</li>
+                            <li>关</li>
+                            <li>关词</li>
+                            <li>关键词词</li>
+                        </ul>
+                     </div>
+                </div>
+                <a href="javascript:;" class="sure">确认添加</a>
+               
+            </div>
+          </div>
+          <div class="bottom-btns">
+            <a href="">预览</a>
+            <a href="">发布</a>
+            <a href="">还原</a>
+          </div>
+          </div>
+        </div>          
+        </div> 
+        <!--content部分结束-->
+        <div class="row footer">
+          <div class="col-md-10 col-md-offset-2 text-center">
+            《中国学术期刊（光盘版）》电子杂志社有限公司
+          </div>
+        </div>
+      </div>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script>
+	    //编辑
+	  $(".items").on("click",".item .btn1",function(){
+		  var text=$(this).siblings("p").text()
+		  $(this).parent().addClass("edit").children().hide()
+		  $(this).siblings(".editwrap").show()
+		  $(this).siblings(".editwrap").find("input").val(text)
+		  })
+      $(".items").on("click",".editwrap .btn3",function(){
+		  var value=$(this).siblings("input").val()
+		  $(this).parent().hide().siblings().show()
+		  $(this).parent().siblings("p").text(value)
+		  $(this).parents(".item").removeClass("edit")
+		  })
+		 $(".items ").on("click",".editwrap .btn4",function(){
+			 $(this).parent().hide().siblings().show()
+			  $(this).parents(".item").removeClass("edit")
+			 })
+	 //新建
+	 var string='<div class="item "><p></p><a href="javascript:;" class="btn1"></a><a href="javascript:;" class="btn2"></a><div class="editwrap" style="display:block"><input type="text"><a href="javascript:;" class="btn3">确定</a><a href="javascript:;" class="btn4">取消</a></div></div>'
+	$(".items .new").click(function(){
+		$(".itemwrap").append(string)	
+		$(".content").css("height","auto")
+		var height1=$(".sidebar").height(),
+			  height2=$(".content").height(),
+			  maxHeight=Math.max(height1,height2)
+	          $('.sidebar').height(maxHeight);
+       		 $('.content').height(maxHeight)
+			 })
+	//下拉
+	$.divselect($(".select p"),$(".select ul"),$(".select ul li"));
+    </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+      <link href="css/forum.css" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!-- 模态框（Modal）-->
+    <div class="modal fade modifyAdvice" tabindex="-1" data-backdrop="static" data-keyboard="false" data-show="true">
+       <div class="modal-dialog">
+          	<div class="modal-content">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal"></button>
+                	<h4 class="modal-title">修改建议<small>（返回修改，该讲坛内容将无法发布）</small></h4>
+             	</div>
+             	<div class="modal-body">
+                <h2>卓越父母造就卓越孩子——现代家庭教育之南<span>——何永</span></h2>
+                <textarea placeholder="请您填写修改意见"></textarea>
+             	</div>
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save" data-dismiss="modal">确认返回修改</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取  消</button>
+             	</div>
+          	</div>
+      	</div><!-- /.modal -->
+    </div>
+    <!--模态框结束-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.modal').modal('show');
+    </script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+    	<link href="css/backstage.css" rel="stylesheet"> 
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    	<!--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".modal3">模态框3</button>-->
+    <div class="modal fade modal12" tabindex="-1" data-backdrop="static" data-keyboard="false">
+       <div class="modal-dialog">
+          	<div class="modal-content ">
+             	<div class="modal-header">
+                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">新增主编</h4>
+             	</div>
+             	<div class="modal-body" >
+                <h5 class="basic-info">基本信息: <span>用户名（summer10123）</span></h5>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-sm-6 pdr0">
+                      <label class="col-sm-4 control-label">真实姓名：</label>
+                      <div class="col-sm-8 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 pdl0">
+                      <label class="col-sm-4 control-label">所在行业：</label>
+                      <div class="col-sm-8 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div><!--form-group-->
+                  <div class="form-group margin0">
+                      <label class="col-sm-2 control-label">工作单位：</label>
+                      <div class="col-sm-10 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                  </div><!--form-group-->
+                  <div class="form-group">
+                    <div class="col-sm-6 pdr0">
+                      <label class="col-sm-4 control-label">职&nbsp;&nbsp;&nbsp;&nbsp;业：</label>
+                      <div class="col-sm-8 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 pdl0">
+                      <label class="col-sm-4 control-label">手&nbsp;机&nbsp;号：</label>
+                      <div class="col-sm-8 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div><!--form-group-->
+                  <div class="form-group margin0">
+                      <label class="col-sm-2 control-label">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+                      <div class="col-sm-10 pdl0">
+                        <input type="text" class="form-control">
+                      </div>
+                  </div><!--form-group-->
+                </form>    
+                <h5>权限设置：</h5>
+                <div class="checkbox-list1 clearfix">
+                  <span class="title">免费专辑：</span>
+                  <ul>
+                      <li class="checkbox-box1 active">
+                        <span class="checkbox"></span><span class="checkbox-label">A（基础科学）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">B（工程科技一）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">C（工程科技二）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">D（农业科技） </span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">E（医药卫生科技）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">I（信息科技） </span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">F（哲学与人文科学）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">G（社会科学一）</span>
+                      </li>
+                      <li class="checkbox-box1">
+                        <span class="checkbox"></span><span class="checkbox-label">H（社会科学二）</span>
+                      </li>
+                      <li class="checkbox-box1 last">
+                        <span class="checkbox"></span><span class="checkbox-label">J（经济与管理科学）</span>
+                      </li>
+                  </ul>
+                </div>
+                <div class="form-group margin0 ktsj">
+                  <label class="col-sm-2 control-label">开通时间：</label>
+                  <div class="col-sm-10 pdl0">
+                    <input type="text" class="form-control laydate-icon" id="start" value="2015-02-06">
+                    <span class="line">---</span><input type="text" class="form-control laydate-icon" value="2015-02-06" id="end">
+                  </div>
+                </div><!--form-group-->
+                <div class="col-sm-10 col-sm-offset-2 padding0 checkbox-list2">
+                  <ul class="clearfix ">
+                    <li class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">1个月</span></li>
+                    <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">3个月</span></li>
+                    <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">6个月</span></li>
+                    <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">1年</span></li>
+                    <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">3年</span></li>
+                    <li class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">自定义</span></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+             	</div>
+             	<div class="modal-footer">
+                	<button type="button" class="btn btn-save" data-dismiss="modal">保存</button>
+                	<button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+             	</div>
+          	</div><!-- /.modal-content 弹框3结束-->
+      	</div>
+    </div>
+    <!--模态框结束-->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.modal12').modal('show');
+
+      //日历时间
+    !function(){
+      laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+      laydate({elem: '#demo'});//绑定元素
+      }();
+      //日期范围限制
+      var start = {
+          elem: '#start',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(), //设定最小日期为当前日期
+          max: '2099-06-16', //最大日期
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+               end.min = datas; //开始日选好后，重置结束日的最小日期
+               end.start = datas //将结束日的初始值设定为开始日
+          }
+      };
+      var end = {
+          elem: '#end',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(),
+          max: '2099-06-16',
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+              start.max = datas; //结束日选好后，充值开始日的最大日期
+          }
+      };
+      laydate(start);
+      laydate(end);
+    </script>
+    </body>
+</html>

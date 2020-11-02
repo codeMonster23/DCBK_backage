@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css"rel="stylesheet">  
+    <link href="css/backstage.css"rel="stylesheet">  
+    <script type="text/javascript"src="js/jquery-1.10.1.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+        <div class="container-fluid padding0">
+            <div class="navbar-left">
+                <a href=""class="logo pull-left"title="大成编客"></a><a href=""class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+            </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+                <ul class="login-dropdown">
+                    <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+                    <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+                    <li><a href=""><i class="exit"></i>退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--头部部分结束-->
+<!--主体部分开始-->
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3 active">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first active"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5 ">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first "><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content audit1 zbrz">
+            <div class="audit-progress hccg">
+                <div class="audit-progress-l">
+                   <p>当前状态：</p>
+                   <p>个人认证（审核通过）</p>
+                </div>
+                <div class="audit-progress-r clearfix">
+                    <a href="" class="check-report">查看主编详细信息>></a>
+                </div>
+            </div>
+            <div class="tab">
+                    <div class="tab-content works-info">
+                        <div class="audit-title">认证基本信息 </div>
+                        <table class="table table-responsive audit-table">
+                            <thead>
+                        <tr>
+                            <th class="first">项目</th>
+                            <th class="last">详细</th>
+                        </tr>
+                            </thead>
+                            <tbody>
+                        <tr>
+                            <td class="first">申请认证时间</td> 
+                            <td class="text-left">2015/06/02  14:02:26</td>
+                        </tr>
+                        <tr>
+                            <td class="first">参赛组别</td>
+                            <td class="text-left">大众阅读组</td>
+                        </tr>
+                        <tr>
+                            <td class="first">用户名</td>
+                            <td class="text-left">summer10123</td>
+                        </tr>
+                        <tr>
+                            <td class="first">注册邮箱</td>
+                            <td class="text-left">summer10123@126.com</td>
+                        </tr>
+                        <tr>
+                            <td class="first">注册时间</td>
+                            <td class="text-left">2015/03/04  09:02:26</td>
+                        </tr>
+                        <tr>
+                            <td class="first">所属行业</td>
+                            <td class="text-left">医药卫生</td>
+                        </tr>
+                        <tr>
+                            <td class="first">真实姓名</td>
+                            <td class="text-left">孙子福</td>
+                        </tr>
+                        <tr>
+                            <td class="first">工作单位</td>
+                            <td class="text-left">《中国学术期刊（光盘版）》电子杂志社有限公司</td>
+                        </tr>
+                        <tr>
+                            <td class="first">职业</td>
+                            <td class="text-left">网页设计师</td>
+                        </tr>
+                        <tr>
+                            <td class="first">学历</td>
+                            <td class="text-left">本科</td>
+                        </tr>
+                        <tr>
+                            <td class="first">擅长领域</td>
+                            <td class="text-left">冠心病的治疗方法及药学研究</td>
+                        </tr>
+                        <tr>
+                            <td class="first">个人简介</td>
+                            <td class="text-left"style="max-width:200px;"><p>对待工作认真负责，善于沟通、协调有较强的组织能力与团队精神；活泼开朗、乐观上进、有爱心并善于施教并行；上进心强、勤于学习能不断提高自身的能力与综合素质。在未来的工作中，我将以充沛的精力，刻苦钻研的精神来努力工作，稳定地提高自己的工作能力，与公司同步发展。 自学能力很强,在校自学了很多计算机知识,能熟练组装计算机。</p></td>
+                        </tr>
+                        <tr>   
+                            <td class="first">相关证书</td>
+                            <td class="text-left avatar"><img src="images/certificate.jpg" height="171" width="256" ><a href="">查看大图</a></td>
+                        </tr>
+                        <tr class="last">
+                            <td class="first">手持身份证照</td>
+                            <td class="text-left avatar"><img src="images/id-card.jpg" height="171" width="256" ><a href="">查看大图</a></td>
+                        </tr>
+                            </tbody>
+                        </table>
+                    </div><!--tab-content-->
+             <div class="tab-content editor-info">
+                <div class="audit-title">认证联系信息</div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th class="last">详细</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>联系手机</td> 
+                            <td class="text-left">13206582626</td>
+                        </tr>
+                        <tr>
+                            <td>联系电话</td> 
+                            <td class="text-left">010-62562256</td>
+                        </tr>
+                        <tr>
+                            <td>QQ</td> 
+                            <td class="text-left">372046798</td>
+                        </tr>
+                        <tr>
+                            <td>电子邮箱</td> 
+                            <td class="text-left">SC_wanlihong886@126.com</td>
+                        </tr>
+                        <tr class="last">
+                            <td>通讯地址</td> 
+                            <td class="text-left">北京市海淀区西小口路66号-东升科技园北领地A2栋楼-中国知网</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                    <div class="tab-content note-info">
+                <div class="audit-title">
+                    操作日志
+                </div>
+                <table class="table table-responsive audit-table">
+                    <thead>
+                        <tr>
+                            <th>时间</th>
+                            <th>位置</th>
+                            <th>详细</th>
+                            <th class="last">操作人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2014/02/03 14:15:29</td> 
+                            <td>真实姓名</td>
+                            <td class="text-left">将“赵敏”修改为“赵敏敏”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2014/02/03 14:15:29</td> 
+                            <td>工作单位</td>
+                            <td class="text-left">将“中国知网”修改为“中国学术期刊光盘版电子杂志社有限公司”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr>
+                            <td>2014/02/03 14:15:29</td> 
+                            <td>真实姓名</td>
+                            <td class="text-left">将“赵敏”修改为“赵敏敏”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                        <tr class="last">
+                            <td>2014/02/03 14:15:29</td> 
+                            <td>工作单位</td>
+                            <td class="text-left">将“中国知网”修改为“中国学术期刊光盘版电子杂志社有限公司”</td>
+                            <td>韩京锎</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!--tab-content-->
+        </div><!--tab-->
+    </div><!--content部分结束-->
+    </div><!--main结束-->
+    <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">©《中国学术期刊（光盘版）》电子杂志社有限公司</div>
+    </div>
+</div><!--container-fluid结束-->
+<div class="modal fade modal4" tabindex="-1" data-backdrop="static" data-keyboard="false">
+       <div class="modal-dialog">
+            <!--弹框1 -->
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                    填写备注信息
+                    </h4>
+                </div>
+                <div class="modal-body" contenteditable="true"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-save"  data-dismiss="modal">保存</button>
+                    <button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+                </div>
+            </div><!-- /.modal-content 弹框1结束-->
+        </div><!-- /.modal -->
+    </div>
+<script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $("table:eq(1) tr:even,table:eq(2) tr:even").css("background-color","#fafafa");
+    $("table:eq(1) tr").each(function(){
+        $(this).find("td:first").css("font-weight","bold");
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    $(".sidebar .nav-item").click(function() { 
+       $(this).toggleClass('active').siblings().removeClass('active');
+    }); 
+</script>
+</body>
+</html>

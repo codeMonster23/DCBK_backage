@@ -1,0 +1,188 @@
+
+.hcsb .audit-progress-r .btn{
+    margin-right: 12px;
+    font-weight: 700;
+}
+.hcsb .audit-progress-r .btn1{
+    background: #0092e5;
+}
+.hcsb .audit-progress-r .btn2{
+    background: #ce0000;
+    color:#fff;
+}
+.hcsb .audit-progress-r .btn3{
+    background: #1eb500;
+    color:#fff;
+}
+.audit1-h2 img{
+    margin-right: 18px;
+}
+.tabnav{
+    height: 40px;
+    padding-left: 8px;
+    border-bottom:1px solid #0092e5;
+    margin-bottom: 25px;
+}
+.tabnav a{
+    position: relative;
+    float: left;
+    width: 105px;
+    height: 39px;
+    line-height: 39px;
+    margin-left:1px;
+    background: #cce8f8;
+    color:#4b4b4b;
+    text-align: center;
+    font-size: 14px;
+}
+.tabnav a.cur{
+    position: relative;
+    top:-3px;
+    height: 43px;
+    border-top:3px solid #0092e5;
+    border-left:1px solid #0092e5;
+    border-right:1px solid #0092e5;
+    margin-left:0;
+    background: #fff;
+    color:#0092e5;
+    font-weight: bold;
+}
+.tabnav a .dot{
+    position: absolute;
+    top:-6px;
+    left:-1px;
+    width: 9px;
+    height: 9px;
+    background: url("../images/icon4.png") no-repeat;
+}
+.audit-table{
+    margin-top: -2px;
+}
+.table-title{
+    border-bottom: 2px solid #0092e5; 
+    font:bold 14px/28px "宋体";
+    color:#0092e5;
+}
+.book-section4 .table-btn{
+    display: block;
+    width: 165px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 10px;
+    background: #0092e5;
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.table-item{
+    margin-bottom:33px;
+}
+.bottom-btns{
+    width: 100%;
+    padding-top: 17px;
+    border-top: 3px solid #0092e5;
+    text-align: center;
+}
+.bottom-btns a{
+    display: inline-block;
+    width: 126px;
+    height: 48px;
+    line-height: 48px;
+    margin:0 3px 48px;
+    background: #0092e5;
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bottom-btns .btn-reverse{
+    border:1px solid #0092e5;
+    background: #fff;
+    color:#0092e5;
+}
+.addBox{
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border:1px solid #0092e5;
+}
+.addBox .close-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 21px;
+    height: 21px;
+    background: #0092e5 url("../images/icon1.png") center no-repeat;
+}
+.addBox .add-btn{
+    margin-left: 65px;
+    margin-top: 30px;
+}
+.table-item .form-inline{
+    margin-top: 20px;
+}
+.table-item .form-group{
+    position: relative;
+    margin-right: 10px;
+}
+.form-group .tip{
+    position: absolute;
+    top:36px;
+    color:#8e8d8d;
+}
+.form-group textarea.form-control{
+    vertical-align: top;
+    width:903px;
+    height: 180px;
+}
+.table-item .dropdown{
+    display: inline-block;
+}
+.table-item .dropdown-toggle{
+    width: 200px;
+}
+.icon-add,.icon-minus{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 30px;
+    margin-left: 5px;
+    background: url("../images/icon2.png") center no-repeat;
+}
+.icon-minus{
+    background-image: url("../images/icon3.png");
+}
+.editor{
+    display: inline-block;
+    vertical-align: top;
+    width: 800px;
+    height: 185px;
+    border:1px solid #ccc;
+}
+.w363{
+    width: 363px !important;
+}
+.w356{
+    width: 356px !important;
+}
+.w802{
+    width: 802px !important;
+}
+.catalogue button{
+    margin-left: 86px;
+    margin-top: 10px;
+}
+.laydate-icon,.laydate_body .laydate_top,.laydate_body .laydate_bottom{
+    height: 34px !important;
+}
+.tabc{padding-top: 10px;}
+.tabc .items .new{ float:left; font-weight:bold; width:165px; height:33px; text-align:center; line-height:33px; color:#ffffff; font-size:14px; background-color:#0A92E3;}
+.tabc .items .itemwrap{width: 810px; margin-left:175px; margin-bottom:10px;}
+.tabc .items .itemwrap .item{ float:left; position:relative;width:260px; height:33px; line-height:33px; border:1px solid #C8C8C8; padding-left:9px; font-size:14px; margin-right:10px; margin-bottom:10px;}
+.tabc .items .itemwrap .item.edit{ border-color:#0A92E3;}
+.tabc .items .itemwrap .item .btn1{ position:absolute; top:10px; right:23px; width:12px; height:12px; background:url(../images/dd-icon1.png) no-repeat;}
+.tabc .items .itemwrap .item .btn2{ position:absolute; top:10px; right:8px; width:11px; height:12px; background:url(../images/dd-icon2.png) no-repeat;}
+.tabc .items .itemwrap .item .editwrap{ display:none;position:absolute; left:8px; top:0; background:#ffffff;}
+.tabc .items .itemwrap .item .editwrap input{ float:left; padding:5px 0 6px 0; line-height:20px; color:#0A92E3; font-family:"宋体"; width:151px;}
+.tabc .items .itemwrap .item .editwrap .btn3{ float:left; width:44px; line-height:25px; text-align:center; margin-top:3px; background-color:#0A92E3; color:#ffffff; margin-right:5px;}
+.tabc .items .itemwrap .item .editwrap .btn4{ float:left;width:44px; line-height:23px; text-align:center; margin-top:3px; border:1px solid #0A92E3; color:#0A92E3; }

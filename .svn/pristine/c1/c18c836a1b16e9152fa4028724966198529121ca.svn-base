@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>评论管理-留言管理</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">  
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script type="text/javascript" src="laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item8 active">
+              <a href="javascript:void(0)"><i></i><span>评论管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first active"><a href="">留言管理</a></li>
+                <li><a href="">书评管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first active"><a href="">订单管理</a></li>
+                <li><a href="">文集管理</a></li>
+                <li><a href="">出版社管理</a></li>
+                <li><a href="">原作者管理</a></li>
+                <li><a href="">收益总览</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content fcgl">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">评论管理></a>
+              <a href="">留言管理</a>
+            </div>
+            <div class="works">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1 padding0">
+                    <div class="row search-box">
+                      <div class="col-sm-2 padding0">
+                        <div class="dropdown">
+                          <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">用户名<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="">留言内容</a></li>
+                          </ul>
+                        </div><!--dropdown-->
+                      </div><!--col-sm-2-->
+                      <div class="col-sm-10 padding0 pdl20">
+                        <div class="input-group">
+                          <input type="text" class="form-control search-input">
+                          <div class="input-group-btn"> 
+                            <button class="btn btn-search">搜索</button>
+                          </div>
+                        </div>
+                      </div><!--col-sm-10-->
+                    </div><!--search-box-->
+                  </div><!--col-sm-10-->
+                </div>
+              </div>
+            </div><!--works-->
+            <div class="audit comment">
+              <div class="tab">
+                <div class="tab-nav">
+                  <a href="">全部</a>
+                  <a href="" class="active">待审核</a>
+                  <a href="">已通过</a>
+                  <a href="" class="last">未通过</a>
+                </div>
+                <div class="tab-content">
+                  <div class="audit-status">
+                    <div class="pull-left">
+                      <div class="checkbox-box1"><span class="checkbox"></span><span class="checkbox-label">全选</span></div>
+                      <a href="" class="btn btn-grey">批量通过</a>
+                      <a href="" class="btn btn-grey">批量删除</a>
+                      <div class="calendar calendar1">
+                        <ul class="inline">
+                          <li class="inline">从</li>
+                          <li class="inline laydate-icon" id="start" style="width:90px;">2016-4-14</li>
+                          <li class="inline">至</li>
+                          <li class="inline laydate-icon" id="end" style="width:90px;">2016-4-14</li>
+                          <li><a href="" class=" skip">跳转</a></li>
+                        </ul>
+                      </div>
+                    </div>     
+                    <div class="pull-right record">
+                       共<i> 189654 </i>条记录
+                    </div>
+                  </div><!--audit-status-->
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr style="background-color: rgb(245, 245, 245);">
+                        <th>筛选</th>
+                        <th>序号</th>
+                        <th>用户名</th>
+                        <th>主编姓名</th>
+                        <th>留言内容</th>
+                        <th>最后对话时间</th>
+                        <th>审核状态</th>
+                        <th class="last">操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>01</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr class="reply">
+                        <td></td>
+                        <td colspan="4"><span class="username">刘明珂</span>回复：说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>02</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">未通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>03</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">待审核<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">通过</a></li>
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>04</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>05</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>06</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>07</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>08</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>09</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>10</td>
+                        <td>summer12134</td>
+                        <td>刘明珂</td>
+                        <td class="text-left">说说作死的好玩事，小段子吧 “作死”这是一个具有悠久历史的永恒话题，从古至今随着时间的发展，时代的进步，人们用生命和血的教训将“作死”发扬光大， 如果有一部《中国作死史》的话，肯定能位列中国五大名著之一。 </td>
+                        <td>2016/05/05<br>18:15:19</td>
+                        <td>
+                          <div class="dropdown">
+                            <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">已通过<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="">不通过</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td class="blue">[<a href="">删除</a>][<a href="">禁言</a>]</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="page">
+              <ul>
+                <li class="width-58"><a href="">首页</a></li>
+                <li class="width-58"><a href="">上一页</a></li>
+                <li><a href="" class="cur">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li>...</li>
+                <li><a href="">987</a></li>
+                <li class="width-58"><a href="">下一页</a></li>
+                <li class="width-58"><a href="">末页</a></li>
+                <li class="width-58 border0 ">跳转到：</li>
+                <li class="border0 width-80">
+                  <div class="input-group page-input">
+                    <input type="text" class="form-control txt">
+                    <div class="input-group-btn"> 
+                        <button class="btn btn-search btn-identify">确定</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> <!--content部分结束-->
+      </div><!--main部分结束-->
+      <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+        </div>
+      </div><!--footer部分结束-->
+    </div><!--container-fluid部分结束-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".navbar-right  a.user").click(function(){
+        $(this).siblings(".login-dropdown").toggle();
+      });
+      $(".sidebar .nav-item").click(function(){
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("table tr:odd").css("background-color","#f5f5f5");
+      $("table tr").each(function(){
+        $(this).find("td:eq(2),td:eq(3)").css("color","#0c96e5");
+        $(this).find("td:eq(4)").css("max-width","480px");
+      });
+
+      $("table tr.reply").each(function(){
+        $(this).css("background-color","#ebebeb");
+        $(this).find("td").css("border-right-color","#fff");
+        $(this).find("td:eq(1)").css({"text-align":"left","max-width":"760px"});
+        $(this).find("td:eq(2),td:eq(3)").css("color","#4b4b4b");
+      });
+      var con_height=$(".content").outerHeight();
+      $(".sidebar").height(con_height);
+
+      !function(){
+        laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+        laydate({elem: '#demo'});//绑定元素
+        }();
+        //日期范围限制
+        var start = {
+            elem: '#start',
+            format: 'YYYY-MM-DD',
+            min: laydate.now(), //设定最小日期为当前日期
+            max: '2099-06-16', //最大日期
+            istime: true,
+            istoday: false,
+            choose: function(datas){
+                 end.min = datas; //开始日选好后，重置结束日的最小日期
+                 end.start = datas //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY-MM-DD',
+            min: laydate.now(),
+            max: '2099-06-16',
+            istime: true,
+            istoday: false,
+            choose: function(datas){
+                start.max = datas; //结束日选好后，充值开始日的最大日期
+            }
+        };
+        laydate(start);
+        laydate(end);
+    </script>
+
+    </body>
+</html>

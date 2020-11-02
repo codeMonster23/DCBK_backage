@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>讲坛管理-文章管理</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+      <link href="css/backstage.css" rel="stylesheet">  
+    	<link href="css/forum.css" rel="stylesheet">  
+    	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1">
+            <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">用户基本信息</a></li>
+              <li><a href="">第三方登录管理</a></li>
+              <li><a href="">用户操作信息</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2">
+            <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">订单查询</a></li>
+              <li><a href="">充值方式统计</a></li>
+              <li><a href="">补单管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item3">
+            <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">主编认证</a></li>
+              <li><a href="">主编信息</a></li>
+              <li><a href="">主编权限控制</a></li>
+              <li><a href="">主编操作信息</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item4 ">
+            <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">责编认证</a></li>
+              <li><a href="">编辑管理</a></li>
+              <li><a href="">作品审核</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item5">
+            <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部作品</a></li>
+              <li><a href="">精品推荐</a></li>
+              <li><a href="">价格管理</a></li>
+              <li><a href="">分类管理</a></li>
+              <li><a href="">发布与下架</a></li>
+              <li><a href="">下架申请</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item7">
+            <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">责编认证</a></li>
+              <li><a href="">编辑管理</a></li>
+              <li><a href="">作品审核</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item6">
+            <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">首页更新</a></li>
+              <li><a href="">认证首页更新</a></li>
+              <li><a href="">主编推荐更新</a></li>
+              <li><a href="">教育频道更新</a></li>
+              <li><a href="">生活频道更新</a></li>
+              <li><a href="">营销频道更新</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item11">
+            <a href="javascript:void(0)"><i></i><span>机构管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first "><a href="">全部机构</a></li>
+              <li class="active"><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item12">
+            <a href="javascript:void(0)"><i></i><span>意见反馈</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          
+          <div class="nav-item nav-item13">
+            <a href="javascript:void(0)"><i></i><span>评论管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item14">
+            <a href="javascript:void(0)"><i></i><span>比赛管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+
+          <div class="nav-item nav-item15">
+            <a href="javascript:void(0)"><i></i><span>系列丛书</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">全部机构</a></li>
+              <li><a href="">机构申请</a></li>
+              <li><a href="">机构主编申请</a></li>
+              <li><a href="">机构绑定</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item16 active">
+            <a href="javascript:void(0)"><i></i><span>讲坛管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first active"><a href="">文章管理</a></li>
+              <li><a href="">分组管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content fcgl forum">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">讲坛管理></a>
+              <a href="">文章管理</a>
+            </div>
+            <div class="works">
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="row works-search">
+                  <div class="col-sm-10 col-sm-offset-1 padding0">
+                    <div class="row search-box">
+                      <div class="col-sm-2 padding0">
+                        <div class="dropdown">
+                          <a href="" class="btn btn-default dropdown-toggle" data-toggle="dropdown">关键词<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="">文章标题</a></li>
+                            <li><a href="">提交时间</a></li>
+                            <li><a href="">主编名</a></li>
+                            <li><a href="">主编昵称</a></li>
+                          </ul>
+                        </div><!--dropdown-->
+                      </div><!--col-sm-2-->
+                      <div class="col-md-10 padding0 pdl20">
+                        <div class="row">
+                          <div class="input-group col-md-10 pull-left">
+                            <input type="text" class="form-control search-input" placeholder="输入关键词进行搜索">
+                            <div class="input-group-btn"><button class="btn btn-search">搜索</button></div>
+                            </div>
+                            <div class="col-md-2"><a href="javascript:void(0)" class="btn btn-qktj">清空条件</a></div>
+                          </div>
+                      </div><!--col-sm-10-->
+                    </div><!--search-box-->
+                  </div><!--col-sm-10--></div>
+                <div class="row works-classify">
+                  <div class="col-sm-10 col-sm-offset-1 padding0">
+                    <div class="works-classify-title pull-left">筛 选：</div>
+                    <div class="clearfix">
+                      <div class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">全部文章</span></div>
+                      <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">待审核</span></div>
+                      <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">已通过</span></div>
+                      <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">未通过</span></div>
+                    </div> 
+                  </div><!--col-sm-10--></div> 
+                </div>
+              </div>
+          </div>
+          <div class="row audit comment articleManage">
+              <div class="tab">
+                <div class="tab-content">
+                  <div class="audit-status">
+                    <div class="pull-left btns btns-blue">
+                        <a href="" class="btn first cur">全部</a>
+                        <a href="" class="btn">图片</a>
+                        <a href="" class="btn">音频</a>
+                        <a href="" class="btn">视频</a>
+                    </div>
+                    <div class="pull-right record">
+                      <strong class="pull-left">显示顺序</strong>
+                      <div class="checkbox-box active"><span class="checkbox"></span><span class="checkbox-label">提交时间</span></div>
+                      <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">最后操作时间</span></div>
+                      <div class="checkbox-box"><span class="checkbox"></span><span class="checkbox-label">阅读量</span></div> 
+                    </div>
+                  </div>
+                  <table class="table table-responsive audit-table ">
+                    <thead>
+                      <tr style="background-color: rgb(245, 245, 245);">
+                        <th><strong>序号</strong></th>
+                        <th><strong>主编姓名</strong></th>
+                        <th><strong>文章标题</strong></th>
+                        <th><strong>分类</strong></th>
+                        <th><strong>发布时间</strong></th>
+                        <th class="last"><strong>审核状态</strong></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>001</td>
+                        <td>胡慧</td>
+                        <td><a href="" class="title">路遥《平凡的世界》解读</a>&nbsp;&nbsp;<img src="images/img.png" height="16" width="18" alt=""></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-grey">未通过</a></td>
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>何永</td>
+                        <td><a href="" class="title">歌尽桃花扇底风</a>&nbsp;&nbsp;<img src="images/video.png" height="12" width="16" alt=""></td>
+                        <td>诗歌文集</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-orange">待审核</a></td>
+                      </tr>
+                      <tr>
+                        <td>003</td>
+                        <td>陈鹏</td>
+                        <td><a href="" class="title">苹果成功之道</a>&nbsp;&nbsp;<img src="images/img.png" height="16" width="18" alt=""></td>
+                        <td>科技频道</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-green">通过</a></td>
+                      </tr>
+                      <tr>
+                        <td>004</td>
+                        <td>左云</td>
+                        <td><a href="" class="title">莫言《丰臀巨乳》解读</a>&nbsp;&nbsp;<img src="images/audio.png" height="16" width="18" alt=""></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-orange">待审核</a></td>
+                      </tr>
+                      <tr>
+                        <td>005</td>
+                        <td>胡慧</td>
+                        <td><a href="" class="title">路遥《平凡的世界》解读</a></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-lightGrey">下架</a></td>
+                      </tr>
+                      <tr>
+                        <td>006</td>
+                        <td>胡慧</td>
+                        <td><a href="" class="title">路遥《平凡的世界》解读</a></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-grey">未通过</a></td>
+                      </tr>
+                      <tr>
+                        <td>007</td>
+                        <td>何永</td>
+                        <td><a href="" class="title">歌尽桃花扇底风</a></td>
+                        <td>诗歌文集</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-orange">待审核</a></td>
+                      </tr>
+                      <tr>
+                        <td>008</td>
+                        <td>陈鹏</td>
+                        <td><a href="" class="title">苹果成功之道</a></td>
+                        <td>科技频道</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-green">通过</a></td>
+                      </tr>
+                      <tr>
+                        <td>009</td>
+                        <td>左云</td>
+                        <td><a href="" class="title">莫言《丰臀巨乳》解读</a></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-orange">待审核</a></td>
+                      </tr>
+                      <tr>
+                        <td>010</td>
+                        <td>胡慧</td>
+                        <td><a href="" class="title">路遥《平凡的世界》解读</a></td>
+                        <td>文学艺术</td>
+                        <td>2016-04-23  00:50:46</td>
+                        <td><a href="javascript:;" class="btn btn-lightGrey">下架</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="page">
+              <ul>
+                <li class="width-58"><a href="">首页</a></li>
+                <li class="width-58"><a href="">上一页</a></li>
+                <li><a href="" class="cur">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li>...</li>
+                <li><a href="">987</a></li>
+                <li class="width-58"><a href="">下一页</a></li>
+                <li class="width-58"><a href="">末页</a></li>
+                <li class="width-58 border0 ">跳转到：</li>
+                <li class="border0 width-80">
+                  <div class="input-group page-input">
+                    <input type="text" class="form-control txt">
+                    <div class="input-group-btn"> 
+                        <button class="btn btn-search btn-identify">确定</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div> <!--content部分结束-->
+      </div><!--main部分结束-->
+      <div class="row footer">
+        <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+        </div>
+      </div><!--footer部分结束-->
+    </div><!--container-fluid部分结束-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".navbar-right  a.user").click(function(){
+        $(this).siblings(".login-dropdown").toggle();
+      });
+      $(".sidebar .nav-item").click(function(){
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("table tr:even").css("background-color","#f5f5f5");
+      var con_height=$(".content").outerHeight();
+      $(".sidebar").height(con_height);
+    </script>
+    </body>
+</html>

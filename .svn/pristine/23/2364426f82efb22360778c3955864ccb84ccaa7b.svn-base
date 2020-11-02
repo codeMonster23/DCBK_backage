@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>图书审核</title>
+    	<link href="../../css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="../../css/backstage.css" rel="stylesheet">  
+    	<script type="text/javascript" src="../../js/jquery-1.10.1.min.js"></script>
+      <script src="../../laydate/laydate.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+      <![endif]-->
+      <style>
+        .hccg .audit-progress-r{
+          margin-top:22px;
+        }
+        .audit-progress .title{
+          float: left;
+          line-height:108px;
+          margin-left:30%;
+          font-size: 18px;
+          font-family: "微软雅黑";
+        }
+      </style>
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo">大众知识服务</a><span class="padding-15">|</span><a href="">后台管理系统</a>
+          <div class="sublogo pull-left"><a href="">大成编客</a> <span>&nbsp;|&nbsp;</span> <a href=""><strong>品得书院</strong></a></div>
+        </div> 
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限控制</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+          <div class="nav-item nav-item1 active">
+            <a href="javascript:void(0)"><i></i><span>图书管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">全部图书</a></li>
+              <li class="active"><a href="">图书审核</a></li>
+              <li><a href="">纠错管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item2">
+            <a href="javascript:void(0)"><i></i><span>品评管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">短评管理</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+          <div class="nav-item nav-item3 ">
+            <a href="javascript:void(0)"><i></i><span>评论管理</span><b></b></a>
+            <ul class="nav-list">
+              <li class="first"><a href="">品读评论</a></li>
+              <li class="last"></li>
+            </ul>
+          </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-md-10 content">       
+          <div class="breadcrumb-nav">
+            <a href="">首页></a>
+            <a href="">图书管理></a>
+            <a href="">图书审核</a>
+          </div>
+          <div class="audit-progress hccg">
+            <div class="audit-progress-l width-150">
+              <p>当前状态：</p>
+              <p>待审核</p>
+            </div>
+            <div class="title">百年孤独</div>
+            <div class="audit-progress-r pull-right clearfix">
+              <span>审核意见</span><br>
+              <a href="" class="btn btn1">通过</a>
+              <a href="" class="btn">不通过</a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="tab-content works-info">
+              <div class="audit-title">图书基本信息（推荐人：summer10123）</div>
+              <table class="table table-responsive audit-table">
+                <thead>
+                  <tr>
+                    <th class="first">项目</th>
+                    <th>详细</th>
+                    <th class="last">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td class="first">书名</td> 
+                      <td class="text-left">百年孤独</td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                      <td class="first">副书名</td>
+                      <td class="text-left">——</td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                      <td class="first">作者</td>
+                      <td class="text-left">[哥伦比亚] 加西亚·马尔克斯</td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">译者</td>
+                    <td class="text-left">范晔</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">出版社</td>
+                    <td class="text-left">南海出版公司</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">出版时间</td>
+                    <td class="text-left">2011-6</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">ISBN</td>
+                    <td class="text-left">9787544253994</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">纸书定价</td>
+                    <td class="text-left">39.50元</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">丛书</td>
+                    <td class="text-left">新经典文库:加西亚·马尔克斯作品</td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                      <td class="first">作者简介</td>
+                      <td class="text-left" style="max-width:200px;"><p>
+                        加西亚•马尔克斯（Gabriel García Márquez）1927年出生于哥伦比亚马格达莱纳海滨小镇阿拉卡塔卡。童年与外祖父母一起生活。1936年随父母迁居苏克雷。1947年考入波哥大国立大学。1948年因内战辍学，进入报界。五十年代开始发表文学作品。六十年代初移居墨西哥。1967年出版《百年孤独》。1982年获诺贝尔文学奖。</p></td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">内容简介</td>
+                    <td class="text-left" style="max-width:200px;"><p>《百年孤独》是魔幻现实主义文学的代表作，描写了布恩迪亚家族七代人的传奇故事，以及加勒比海沿岸小镇马孔多的百年兴衰，反映了拉丁美洲一个世纪以来风云变幻的历史。作品融入神话传说、民间故事、宗教典故等神秘因素，巧妙地糅合了现实与虚幻，展现出一个瑰丽的想象世界，成为20世纪最重要的经典文学巨著之一。1982年加西亚•马尔克斯获得诺贝尔文学奖，奠定世界级文学大师的地位，很大程度上乃是凭借《百年孤独》的巨大影响。</p></td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                      <td class="first">图书封面</td>
+                      <td class="text-left pic"><img src="../../images/works-info1.jpg"></td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr>
+                    <td class="first">图书目录</td>
+                    <td class="text-left">
+                      <p>一、梅尔基亚德斯……p1</p>
+                        <p>二、马孔多/阿尔卡蒂奥（庇拉尔·特尔内拉）……p17</p>
+                        <p>三、丽贝卡/里正（失忆症）……p33</p>
+                        <p>四、克雷斯皮/蕾梅黛丝……p52</p>
+                        <p>五、尼卡诺尔神甫/何塞·阿尔卡蒂奥……p71</p>
+                        <p>六、乌尔苏拉……p92</p>
+                        <p>七、奥雷里亚诺上校……p108</p>
+                        <p>八、蒙达卡将军/阿尔卡蒂奥·何塞……p126</p>
+                        <p>九、马尔克斯上校……p143</p>
+                        <p>十、佩特娜•科特斯……p161</p>
+                    </td>
+                    <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                  <tr class="last">
+                      <td class="first">图书分类</td>
+                      <td class="text-left">——</td>
+                      <td class="blue">[<a href="">修改</a>]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-content log">
+              <div class="audit-title">操作日志</div>
+              <table class="table table-responsive audit-table">
+                <thead>
+                  <tr>
+                      <th>序号</th>
+                      <th>详细</th>
+                      <th class="last">操作人</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>01</td> 
+                      <td class="text-left">修改封面</td>
+                      <td>张三</td>
+                  </tr>
+                  <tr class="last">
+                      <td>02</td> 
+                      <td class="text-left">修改封面</td>
+                      <td>韩京锎</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row footer">
+          <div class="col-sm-10 col-sm-offset-2 text-center">
+            ©《中国学术期刊（光盘版）》电子杂志社有限公司
+          </div>
+        </div>
+      </div>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    !function(){
+      laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+      laydate({elem: '#demo'});//绑定元素
+      }();
+      //日期范围限制
+      var start = {
+          elem: '#start',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(), //设定最小日期为当前日期
+          max: '2099-06-16', //最大日期
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+               end.min = datas; //开始日选好后，重置结束日的最小日期
+               end.start = datas //将结束日的初始值设定为开始日
+          }
+      };
+      var end = {
+          elem: '#end',
+          format: 'YYYY-MM-DD',
+          min: laydate.now(),
+          max: '2099-06-16',
+          istime: true,
+          istoday: false,
+          choose: function(datas){
+              start.max = datas; //结束日选好后，充值开始日的最大日期
+          }
+      };
+      laydate(start);
+      laydate(end);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>用户管理 -用户基本信息（详情）</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">  
+    	<link href="css/backstage.css" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    	<!--[if lt IE 9]>
+      		<script src="js/html5.js"></script>
+      		<script src="js/respond.js"></script>
+    	<![endif]-->
+    </head>
+    <body>
+    <!--头部部分开始-->
+    <nav class="navbar clearfix">
+      <div class="container-fluid">
+        <div class="navbar-left">
+          <a href="" class="logo pull-left" title="大成编客"></a><a href="" class="pull-left"><span class="pull-left padding-15">|</span>后台管理系统</a>
+        </div>
+        <div class="navbar-right">
+          <a href="javascript:void(0)" class="user">JM_63248i<i></i></a>
+          <ul class="login-dropdown">
+            <li><a href=""><i class="qxgl"></i>权限管理</a></li>
+            <li><a href=""><i class="changePwd"></i>密码修改</a></li>
+            <li><a href=""><i class="exit"></i>退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--头部部分结束-->
+    <!--主体部分开始-->
+    <div class="container-fluid">
+      <div class="row main">
+        <div class="col-sm-2 sidebar">
+            <div class="nav-item nav-item1 active">
+              <a href="javascript:void(0)"><i></i><span>用户管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first active"><a href="">用户基本信息</a></li>
+                <li><a href="">第三方登录管理</a></li>
+                <li><a href="">用户操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item2">
+              <a href="javascript:void(0)"><i></i><span>订单管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">订单查询</a></li>
+                <li><a href="">充值方式统计</a></li>
+                <li><a href="">补单管理</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item3">
+              <a href="javascript:void(0)"><i></i><span>主编管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">主编认证</a></li>
+                <li><a href="">主编信息</a></li>
+                <li><a href="">主编权限管理</a></li>
+                <li><a href="">主编操作信息</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item4">
+              <a href="javascript:void(0)"><i></i><span>出版审核</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item5">
+              <a href="javascript:void(0)"><i></i><span>作品管理</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">全部作品</a></li>
+                <li><a href="">精品推荐</a></li>
+                <li><a href="">价格管理</a></li>
+                <li><a href="">分类管理</a></li>
+                <li><a href="">发布与下架</a></li>
+                <li><a href="">下架申请</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item7">
+              <a href="javascript:void(0)"><i></i><span>收益分成</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">责编认证</a></li>
+                <li><a href="">编辑管理</a></li>
+                <li><a href="">作品审核</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+            <div class="nav-item nav-item6">
+              <a href="javascript:void(0)"><i></i><span>内容更新</span><b></b></a>
+              <ul class="nav-list">
+                <li class="first"><a href="">首页更新</a></li>
+                <li><a href="">认证首页更新</a></li>
+                <li><a href="">主编推荐更新</a></li>
+                <li><a href="">教育频道更新</a></li>
+                <li><a href="">生活频道更新</a></li>
+                <li><a href="">营销频道更新</a></li>
+                <li class="last"></li>
+              </ul>
+            </div>
+        </div><!--sidebar部分结束-->
+        <div class="col-sm-10 content content1 user-info-detail">
+          <div class="row">
+            <div class="breadcrumb-nav">
+              <a href="">首页></a>
+              <a href="">用户管理></a>
+              <a href="">用户基本信息</a>
+            </div>
+            <h2 class="text-center audit1-h2">用户基本信息（SC_liuyifan） </h2>
+            
+                <div class="tab-content">
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr><th colspan="2">基本资料</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>用户名</td>
+                        <td class="text-left">SC_liuyifan</td>
+                      </tr>
+                      <tr>
+                        <td>电子邮箱</td>
+                        <td class="text-left">SC_liuyifan@126.com</td>
+                      </tr>
+                      <tr>
+                        <td>注册日期</td>
+                        <td class="text-left">2016/03/02</td>
+                      </tr>
+                      <tr>
+                        <td>职业称谓</td>
+                        <td class="text-left">高级教师</td>
+                      </tr>
+                      <tr>
+                        <td>工作单位</td>
+                        <td class="text-left">《中国学术期刊（光盘版）》电子杂志社有限公司</td>
+                      </tr>
+                      <tr>
+                        <td>所在地</td>
+                        <td class="text-left">北京</td>
+                      </tr>
+                      <tr>
+                        <td>自我介绍</td>
+                        <td class="text-left">1964年9月10日生于浙江省杭州市，祖籍浙江省嵊州市（原嵊县）谷来镇， 阿里巴巴集团主要创始人，现担任阿里巴巴集团董事局主席。</td>
+                      </tr>
+                      <tr>
+                        <td>TA的标签</td>
+                        <td class="text-left">高级教师、语文、教育学、教育管理</td>
+                      </tr>
+                      <tr>
+                        <td>研究领域</td>
+                        <td class="text-left">数学</td>
+                      </tr>
+                      <tr>
+                        <td>TA的头像</td>
+                        <td class="text-left avatar"><img src="images/avatar.jpg" height="116" width="116"><a href="">查看大图</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr><th colspan="2">高级资料</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>感兴趣的文集类型</td>
+                        <td class="text-left">语文、教学、教育管理</td>
+                      </tr>
+                      <tr>
+                        <td>感兴趣的期刊类型</td>
+                        <td class="text-left">语文、教学、教育管理</td>
+                      </tr>
+                      <tr>
+                        <td>感兴趣的专题</td>
+                        <td class="text-left">语文、教学、教育管理</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr><th>操作信息</th></tr>
+                    </thead>
+                    <tbody>
+                      <td>
+                        <a href="" class="btn btn1">查询用户操作记录</a>
+                        <a href="" class="btn btn1">查看用户订单</a>
+                      </td>
+                    </tbody>
+                  </table>
+                  <table class="table table-responsive audit-table">
+                    <thead>
+                      <tr><th>操作信息</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr class="last">
+                        <td>
+                          <a href="" class="btn btn3">密码重置</a>
+                          <a href="" class="btn btn4">主编加V</a>
+                          <a href="" class="btn btn2">禁用账户</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!--tab-content部分结束-->
+          </div> <!--row结束-->
+        </div> <!--content部分结束-->
+      </div>
+      <div class="row footer">
+          <div class="col-sm-10 col-sm-offset-2 text-center">
+            《中国学术期刊（光盘版）》电子杂志社有限公司
+          </div>
+        </div>
+
+      </div>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(".navbar-right  a.user").click(function(){
+      $(this).siblings(".login-dropdown").toggle();
+    });
+    $(".sidebar .nav-item").click(function(){
+      $(this).toggleClass('active').siblings().removeClass('active');
+    });
+    $(".content1 table:eq(0) tr:even").css("background-color","#f8f8f8");
+    $(".content1 table:eq(1) tr:odd").css("background-color","#f8f8f8");
+    $(".content1 table tr").each(function(){
+      $(this).find("td:eq(0)").css({"font-weight":"bold","width":"140px"});
+    });
+    var con_height=$(".content").outerHeight();
+    $(".sidebar").height(con_height);
+    </script>
+    </body>
+</html>
